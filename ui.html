@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="format-detection" content="telephone=no" />
+     <meta property="og:image" content="./img/header/logo.png" />
+     <meta name="description" content="Lorem ipsum dolor sit amet">
+     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+     <!-- bootstrap cdn -->
+     <link rel="stylesheet" href="css/functional/bootstrap@5.2.3.min.css" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+          integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+          crossorigin="anonymous"></script>
+     <!-- bootstrap cdn -->
+     <!-- gsap cdn -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+          integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Flip.min.js"
+          integrity="sha512-Vi0uAaoQQrIY8GZpbmwDW+BpKS+Xhf3FCh0iLWNR6oHlFtZ2hBzWoMEr4NXLd7CBnPKSjfL7fJxzk3inVPasdg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <!-- gsap cdn -->
+     <!-- jquery cdn -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+     <!-- jquery cdn -->
+     <!-- swiper cdn -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+     <!-- swiper cdn -->
+     <link rel="stylesheet" href="css/style.css" />
+     <title>UI</title>
+</head>
+
+<body class="d-flex flex-column h-100 ui-content">
+     <div class="d-flex justify-content-center">
+          <header class="flex-row align-items-center justify-content-between w-100 content-container header">
+     <a class="header__logo" href="main.html">
+          <img src="./img/header/logo.png" alt="logo" class="w-100">
+     </a>
+     <div class="header__content">
+          <div class="dropdown header__link">
+               <a class="d-flex flex-row align-items-center dropdown-btn" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="./about-main.html">
+                    <span>About us</span>
+                    <div class="dropdown-chevron">
+                         <i class="bi bi-chevron-down test"></i>
+                    </div>
+               </a>
+               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="" href="./management.html"><i class="me-2 bi bi-people"></i>Management</a>
+                    <a class="" href="./members.html"><i class="me-2 bi bi-briefcase"></i>Members</a>
+                    <a class="" href="./documents.html"><i class="me-2 bi bi-clipboard"></i>Documents</a>
+                    <a class="" href="./agreements.html"><i class="me-2 bi bi-pass"></i>Agreements</a>
+               </div>
+          </div>
+
+          <a href="./news.html" class="header__link">News</a>
+          <a href="./contact.html" class="header__link">Contacts</a>
+          <a href="./forum.html" class="header__link">Forum</a>
+
+          <a href="https://www.facebook.com/groups/1080010765442829/about/" target="_blank"
+               class="header__link header__icon"><i class="bi bi-facebook"></i></a>
+          <a class="header__link header__icon header-search" " data-bs-toggle=" modal" data-bs-target="#searchModal"
+               type="button"><i class="bi bi-search"></i></a>
+          <div class="burger">
+               <span></span>
+          </div>
+     </div>
+</header>
+<div class="modal fade modal-search" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
+     aria-hidden="true">
+     <div class="d-flex justify-content-center modal-dialog">
+          <div class="px-0 modal-content">
+               <div class="py-0 modal-header search-header">
+                    <div class="d-flex flex-column flex-md-row justify-content-between px-4 py-3 w-100">
+                         <input type="text" name="" id="" class="my-2 pe-2 w-100 search-header__input"
+                              placeholder="Start typing">
+                         <a class="my-2 search-btn" href="./search.html">Search</a>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+          </div>
+     </div>
+</div>
+<nav class="mobile-menu">
+     <ul class="mobile-list">
+          <li>
+               <a aria-expanded="true" href="./about-main.html">
+                    About us
+               </a>
+               <div class="collapse mt-3 ps-3 show" id="menuAbout">
+                    <a href="./management.html" class="mb-3"><i class="me-2 bi bi-people"></i>Management</a>
+                    <a href="./members.html" class="mb-3"><i class="me-2 bi bi-briefcase"></i>Members</a>
+                    <a href="./documents.html" class="mb-3"><i class="me-2 bi bi-clipboard"></i>Documents</a>
+                    <a href="./agreements.html" class="mb-3"><i class="me-2 bi bi-pass"></i>Agreements</a>
+               </div>
+          </li>
+          <li><a href="./news.html">News</a></li>
+          <li><a href="./contact.html">Contacts</a></li>
+     </ul>
+     <hr>
+     <a href="https://www.facebook.com/groups/1080010765442829/about/" target="_blank">
+          <i class="bi bi-facebook"></i>
+     </a>
+</nav>
+<div class="overlay"></div>
+     </div>
+     <main class="d-flex flex-row align-items-start h-100">
+          <nav class="d-block sticky-top me-5">
+               <ul class="position-sticky bg-info mt-5 border border-3 border-primary rounded list-unstyled">
+                    <li class="m-3"><a href="./index.html" class="p-1 text-bg-warning fs-5">index page</a></li>
+                    <li class="m-3"><a href="#top" class="text-black fs-5">Top</a></li>
+                    <li class="m-3"><a href="#1" class="text-black fs-5">Header</a></li>
+                    <li class="m-3"><a href="#15" class="text-black fs-5">Titles and etc.</a></li>
+                    <li class="m-3"><a href="#2" class="text-black fs-5">Advantages blocks</a></li>
+                    <li class="m-3"><a href="#3" class="text-black fs-5">Banners</a></li>
+                    <li class="m-3"><a href="#4" class="text-black fs-5">Slider</a></li>
+                    <li class="m-3"><a href="#5" class="text-black fs-5">Modal</a></li>
+                    <li class="m-3"><a href="#6" class="text-black fs-5">Buttons</a></li>
+                    <li class="m-3"><a href="#7" class="text-black fs-5">Documents</a></li>
+                    <li class="m-3"><a href="#8" class="text-black fs-5">News</a></li>
+                    <li class="m-3"><a href="#9" class="text-black fs-5">Comments</a></li>
+                    <li class="m-3"><a href="#10" class="text-black fs-5">Forum</a></li>
+                    <li class="m-3"><a href="#11" class="text-black fs-5">404</a></li>
+                    <li class="m-3"><a href="#12" class="text-black fs-5">Search</a></li>
+                    <li class="m-3"><a href="#13" class="text-black fs-5">Breadcrumbs</a></li>
+                    <li class="m-3"><a href="#14" class="text-black fs-5">Footers</a></li>
+                    <li class="m-3"><a href="#16" class="text-black fs-5">Marquee</a></li>
+                    <li class="m-3"><a href="#17" class="text-black fs-5">User header</a></li>
+                    <li class="m-3"><a href="#18" class="text-black fs-5">Blog</a></li>
+               </ul>
+          </nav>
+
+          <div class="h-100 content">
+               <section class="d-flex flex-column w-100 section" id="top">
+                    <h1 class="h1">UI Components</h1>
+               </section>
+
+               <h2 class="text-success h2" id="1">Header(done)</h2>
+               <section class="content-container">
+                    <header class="flex-row align-items-center justify-content-between w-100 content-container header">
+     <a class="header__logo" href="main.html">
+          <img src="./img/header/logo.png" alt="logo" class="w-100">
+     </a>
+     <div class="header__content">
+          <div class="dropdown header__link">
+               <a class="d-flex flex-row align-items-center dropdown-btn" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="./about-main.html">
+                    <span>About us</span>
+                    <div class="dropdown-chevron">
+                         <i class="bi bi-chevron-down test"></i>
+                    </div>
+               </a>
+               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="" href="./management.html"><i class="me-2 bi bi-people"></i>Management</a>
+                    <a class="" href="./members.html"><i class="me-2 bi bi-briefcase"></i>Members</a>
+                    <a class="" href="./documents.html"><i class="me-2 bi bi-clipboard"></i>Documents</a>
+                    <a class="" href="./agreements.html"><i class="me-2 bi bi-pass"></i>Agreements</a>
+               </div>
+          </div>
+
+          <a href="./news.html" class="header__link">News</a>
+          <a href="./contact.html" class="header__link">Contacts</a>
+          <a href="./forum.html" class="header__link">Forum</a>
+
+          <a href="https://www.facebook.com/groups/1080010765442829/about/" target="_blank"
+               class="header__link header__icon"><i class="bi bi-facebook"></i></a>
+          <a class="header__link header__icon header-search" " data-bs-toggle=" modal" data-bs-target="#searchModal"
+               type="button"><i class="bi bi-search"></i></a>
+          <div class="burger">
+               <span></span>
+          </div>
+     </div>
+</header>
+<div class="modal fade modal-search" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
+     aria-hidden="true">
+     <div class="d-flex justify-content-center modal-dialog">
+          <div class="px-0 modal-content">
+               <div class="py-0 modal-header search-header">
+                    <div class="d-flex flex-column flex-md-row justify-content-between px-4 py-3 w-100">
+                         <input type="text" name="" id="" class="my-2 pe-2 w-100 search-header__input"
+                              placeholder="Start typing">
+                         <a class="my-2 search-btn" href="./search.html">Search</a>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+          </div>
+     </div>
+</div>
+<nav class="mobile-menu">
+     <ul class="mobile-list">
+          <li>
+               <a aria-expanded="true" href="./about-main.html">
+                    About us
+               </a>
+               <div class="collapse mt-3 ps-3 show" id="menuAbout">
+                    <a href="./management.html" class="mb-3"><i class="me-2 bi bi-people"></i>Management</a>
+                    <a href="./members.html" class="mb-3"><i class="me-2 bi bi-briefcase"></i>Members</a>
+                    <a href="./documents.html" class="mb-3"><i class="me-2 bi bi-clipboard"></i>Documents</a>
+                    <a href="./agreements.html" class="mb-3"><i class="me-2 bi bi-pass"></i>Agreements</a>
+               </div>
+          </li>
+          <li><a href="./news.html">News</a></li>
+          <li><a href="./contact.html">Contacts</a></li>
+     </ul>
+     <hr>
+     <a href="https://www.facebook.com/groups/1080010765442829/about/" target="_blank">
+          <i class="bi bi-facebook"></i>
+     </a>
+</nav>
+<div class="overlay"></div>
+               </section>
+
+               <h2 class="mt-5 text-success h2" id="15">Titles and etc.(done)</h2>
+               <section class="content-container row">
+                    <div class="d-flex flex-column my-2 p-3 border border-info">
+                         <h3 class="h3">
+                              Section title
+                         </h3>
+                         <h1 class="section-title color-blue-accent fw-semibold">Activities</h1>
+                    </div>
+                    <div class="d-flex flex-column my-2 p-3 border border-info">
+                         <h3 class="h3">
+                              Block title
+                         </h3>
+                         <h3 class="block-title color-blue-accent fw-semibold">News</h3>
+                    </div>
+                    <div class="d-flex flex-column my-2 p-3 border border-info">
+                         <h3 class="h3">
+                              Sub title
+                         </h3>
+                         <span class="color-text-gray sub-title">All news</span>
+                    </div>
+               </section>
+
+               <h2 class="mt-5 text-warning h2" id="2">Advant ages blocks(in progress)</h2>
+               <div class="mx-0 mt-4 px-0 w-100 advantages row">
+     <div class="my-2 col-lg-4">
+          <div class="advantages-card adv-card-1">
+               <div class="advantages-card__text">
+                    Lorem, ipsum dolor sit amet consectetur
+               </div>
+          </div>
+     </div>
+
+     <div class="my-2 col-lg-4">
+          <div class="advantages-card adv-card-2">
+               <div class="advantages-card__text">
+                    Amet consectetur adipisicing elit
+               </div>
+          </div>
+     </div>
+
+     <div class="my-2 col-lg-4">
+          <div class="advantages-card adv-card-3">
+               <div class="advantages-card__text">
+                    Animi aperiam velit ratione eos eveniet
+               </div>
+          </div>
+     </div>
+
+     <div class="my-2 col-lg-5">
+          <div class="advantages-card adv-card-4">
+               <div class="advantages-card__text">
+                    Velit eum incidunt ex sequi distinctio
+               </div>
+          </div>
+     </div>
+
+     <div class="my-2 col-lg-5">
+          <div class="advantages-card adv-card-5">
+               <div class="advantages-card__text">
+                    Animi aperiam velit ratione eos eveniet
+               </div>
+          </div>
+     </div>
+
+     <div class="my-2 col-lg-2">
+          <div class="d-flex flex-column flex-wrap align-items-center justify-content-center px-4 py-4 border-20 h-100 text-center btn-adv-enter"
+               role="button" type="button" data-bs-toggle="modal" data-bs-target="#enterForm">
+               <span>+</span>
+               <span>Velit eum</span>
+          </div>
+     </div>
+</div>
+
+               <h2 class="mt-5 text-success h2" id="3">Banners(done)</h2>
+               <section class="content-container">
+                    <div class="justify-content-center mx-0 my-2 my-md-0 w-100 h-100 banner banner-main row">
+                         <div class="d-flex flex-column align-items-end justify-content-center col-md-5">
+                              <p class="pe-none">
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                              </p>
+                              <em>Name Surname</em>
+                         </div>
+                         <picture class="my-2 my-md-0 pe-0 col-md-7">
+                              <source media="(min-width: 650px)" srcset="./img/banners/banner-main.svg">
+                              <img src="./img/banners/banner-main.png" alt="banner-main">
+                         </picture>
+                    </div>
+                    <div class="my-3"></div>
+                    <div class="justify-content-between mx-0 w-100 banner banner-numbers row">
+                         <div
+                              class="d-flex flex-row flex-md-column align-items-center my-2 my-md-0 text-md-center col-md-4 col-sm-12 row banner-numbers__text">
+                              <span class="col-6 col-md-12">7</span>
+                              <span class="col-6 col-md-12">years of work</span>
+                         </div>
+                         <div
+                              class="d-flex flex-row flex-md-column align-items-center my-2 my-md-0 text-md-center col-md-4 col-sm-12 row banner-numbers__text">
+                              <span class="col-6 col-md-12">70+</span>
+                              <span class="col-6 col-md-12">achievements</span>
+                         </div>
+                         <div
+                              class="d-flex flex-row flex-md-column align-items-center my-2 my-md-0 text-md-center col-md-4 col-sm-12 row banner-numbers__text">
+                              <span class="col-6 col-md-12">140</span>
+                              <span class="col-6 col-md-12">works</span>
+                         </div>
+                    </div>
+                    <div class="my-3"></div>
+                    <div class="mx-0 w-100 banner banner-part row">
+                         <div class="align-items-center col-md-12 row banner-part__text">
+                              <span class="col-2">17</span>
+                              <span class="col-10">Organizations</span>
+                         </div>
+                         <div class="d-flex flex-row flex-wrap align-items-center justify-content-center col-md-12">
+                              <img class="mx-4 my-2" src="./img/banners/partners/taikiri.png" alt="taikiri">
+                              <img class="mx-4 my-2" src="./img/banners/partners/finexpertiza.png" alt="finexpertiza">
+                              <img class="mx-4 my-2" src="./img/banners/partners/a1.png" alt="a1">
+                              <img class="mx-4 my-2" src="./img/banners/partners/oma.png" alt="oma">
+                              <img class="mx-4 my-2" src="./img/banners/partners/salt.png" alt="salt">
+                              <img class="mx-4 my-2" src="./img/banners/partners/kvg.png" alt="kvg">
+                              <img class="mx-4 my-2" src="./img/banners/partners/granit.png" alt="granit">
+                              <img class="mx-4 my-2" src="./img/banners/partners/pik.png" alt="pik">
+                              <img class="mx-4 my-2" src="./img/banners/partners/tabak.png" alt="tabak">
+                              <img class="mx-4 my-2" src="./img/banners/partners/sodrujestvo.png" alt="sodrujestvo">
+                              <img class="mx-4 my-2" src="./img/banners/partners/sosedi.png" alt="sosedi">
+                              <img class="mx-4 my-2" src="./img/banners/partners/evroopt.png" alt="evroopt">
+                              <img class="mx-4 my-2" src="./img/banners/partners/revera.png" alt="revera">
+                              <img class="mx-4 my-2" src="./img/banners/partners/urspektr.png" alt="urspektr">
+                              <img class="mx-4 my-2" src="./img/banners/partners/arlepta.png" alt="arlepta">
+                              <img class="mx-4 my-2" src="./img/banners/partners/finansia.png" alt="finansia">
+                         </div>
+                    </div>
+                    <div class="my-3"></div>
+                    <div
+                         class="justify-content-md-between align-items-center justify-content-center mx-0 px-4 py-md-0 w-100 banner banner-email row">
+                         <picture class="d-md-block p-0 d-none col-md-2">
+                              <source media="(min-width: 650px)" srcset="./img/banners/banner-email.svg">
+                              <img src="./img/banners/banner-email.png" alt="banner-email">
+                         </picture>
+                         <div class="d-flex align-items-center justify-content-between my-2 p-0 col-12 col-md-8 row">
+                              <div class="banner-email__text col-md-6">
+                                   <span>Subscribe</span>
+                                   <p class="mt-1 mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+                              </div>
+                              <div
+                                   class="d-flex flex-row align-items-center justify-content-between my-2 banner-email__input col-md-6">
+                                   <input type="email" id="bannerEmail" class="" placeholder="Email">
+                                   <i class="bi-arrow-right bi"></i>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+
+               <h2 class="mt-5 text-success h2" id="4">Slider(done)</h2>
+               <section class="align-items-center content-container row">
+                    <div class="col-4">
+                         <div class="swiper swiper-news">
+                              <div class="swiper-wrapper">
+                                   <div class="swiper-slide">
+                                        <div class="d-flex flex-column justify-content-between pb-3 swiper-content">
+                                             <div class="d-flex flex-column slide-tumbnail">
+                                                  <div class="slide-tumbnail__img">
+                                                       <img src="./img/pic/slider-prev.png" alt="slider-prev">
+                                                  </div>
+                                                  <div class="slide-text">
+                                                       <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                                                       </p>
+                                                  </div>
+                                             </div>
+                                             <div class="slide-footer row">
+                                                  <div class="text-start col-md-6">
+                                                       <span>12.08.2022</span>
+                                                  </div>
+                                                  <div class="text-end col-md-6">
+                                                       <span>#Line</span>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="d-flex flex-column justify-content-between pb-3 swiper-content">
+                                             <div class="d-flex flex-column slide-tumbnail">
+                                                  <div class="slide-tumbnail__img">
+                                                       <img src="./img/pic/slider-prev.png" alt="slider-prev">
+                                                  </div>
+                                                  <div class="slide-text">
+                                                       <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Dolores quae expedita ducimus optio
+                                                            eligendi, inventore nobis repellendus rerum
+                                                            aliquid nam vitae. Error molestias nemo
+                                                            repellat facere deleniti atque pariatur excepturi!
+                                                       </p>
+                                                  </div>
+                                             </div>
+                                             <div class="slide-footer row">
+                                                  <div class="text-start col-md-6">
+                                                       <span>12.08.2022</span>
+                                                  </div>
+                                                  <div class="text-end col-md-6">
+                                                       <span>#Line</span>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="swiper-content">
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="swiper-pagination"></div>
+                         </div>
+                    </div>
+                    <div class="w-100 col-md-12">
+                         <div class="swiper swiper-event">
+                              <div class="swiper-wrapper">
+                                   <div class="swiper-slide">
+                                        <div
+                                             class="d-flex flex-column justify-content-between pb-3 swiper-content-img swiper-content">
+                                             <div class="d-flex flex-column slide-tumbnail">
+                                                  <div class="slide-text">
+                                                       <p>
+                                                            Economics is not boring. How the city competition
+                                                       </p>
+                                                  </div>
+                                             </div>
+                                             <div class="slide-footer row">
+                                                  <div class="text-start col-md-6">
+                                                       <span>12.08.2022</span>
+                                                  </div>
+                                                  <div class="text-end col-md-6">
+                                                       <span>#Line</span>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div
+                                             class="d-flex flex-column justify-content-between pb-3 swiper-content-img swiper-content">
+                                             <div class="d-flex flex-column slide-tumbnail">
+                                                  <div class="slide-text">
+                                                       <p>
+                                                            Land tax, property tax, rent for land, environmental tax -
+                                                            annual declarations (calculations) with 2023 year
+                                                       </p>
+                                                  </div>
+                                             </div>
+                                             <div class="slide-footer row">
+                                                  <div class="text-start col-md-6">
+                                                       <span>12.08.2022</span>
+                                                  </div>
+                                                  <div class="text-end col-md-6">
+                                                       <span>#Meeting</span>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div
+                                             class="d-flex flex-column justify-content-between pb-3 swiper-content-img swiper-content">
+                                             <div class="d-flex flex-column slide-tumbnail">
+                                                  <div class="slide-text">
+                                                       <p>
+                                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                            Voluptatum quas nulla omnis est dolor quisquam repellendus!
+                                                            Quasi, sit.
+                                                       </p>
+                                                  </div>
+                                             </div>
+                                             <div class="slide-footer row">
+                                                  <div class="text-start col-md-6">
+                                                       <span>12.08.2022</span>
+                                                  </div>
+                                                  <div class="text-end col-md-6">
+                                                       <span>#Line</span>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div
+                                             class="d-flex flex-column justify-content-between pb-3 swiper-content-img swiper-content">
+                                             <div class="d-flex flex-column slide-tumbnail">
+                                                  <div class="slide-text">
+                                                       <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Dolores quae expedita ducimus optio
+                                                            eligendi, inventore nobis repellendus rerum
+                                                            aliquid nam vitae. Error molestias nemo
+                                                            repellat facere deleniti atque pariatur excepturi!
+                                                       </p>
+                                                  </div>
+                                             </div>
+                                             <div class="slide-footer row">
+                                                  <div class="text-start col-md-6">
+                                                       <span>12.08.2022</span>
+                                                  </div>
+                                                  <div class="text-end col-md-6">
+                                                       <span>#Line</span>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- If we need navigation buttons -->
+                              <div class="swiper-button-prev"></div>
+                              <div class="swiper-button-next"></div>
+                              <!-- If we need scrollbar -->
+                         </div>
+                    </div>
+               </section>
+
+               <h2 class="mt-5 text-danger h2" id="5">Modal(not start)</h2>
+               <section class="content-container">
+                    <!-- <button type="button" class="border-1 border-info btn" data-bs-toggle="modal" data-bs-target="#searchModal">
+                         search bar
+                    </button>
+                    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                         <div class="modal-dialog modal-fullscreen">
+                              <div class="modal-content">
+                                   <div class="py-0 modal-header search-header">
+                                        <div class="d-flex flex-row justify-content-between px-4 py-3 w-100">
+                                             <input type="text" name="" id="" class="pe-2 w-100 search-header__input" placeholder="Start writing">
+                                             <button class="search-btn">Search</button>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                   </div>
+                                   
+                              </div>
+                         </div>
+                    </div> -->
+               </section>
+
+               <h2 class="mt-5 text-warning h2" id="6">Buttons(in progress)</h2>
+               <section class="d-flex flex-column align-items-start content-container">
+                    <div class="color-bg-sky-blue border-25 btn-approved">
+                         Mark as read
+                    </div>
+                    <div class="my-2"></div>
+                    <div class="color-bg-sky-blue border-25 btn-approved btn-approved-checked">
+                         Watched
+                    </div>
+                    <div class="my-2"></div>
+                    <div class="btn-rating btn-like">
+                         12
+                    </div>
+                    <div class="my-2"></div>
+                    <div class="btn-rating btn-dislike">
+                         12
+                    </div>
+                    <div class="my-2"></div>
+                    <div class="btn-rating btn-like btn-like-checked btn-rating-checked">
+                         12
+                    </div>
+                    <div class="my-2"></div>
+                    <div class="btn-rating btn-dislike btn-dislike-checked btn-rating-checked">
+                         12
+                    </div>
+                    <div class="my-2"></div>
+                    <a class="btn-tr" href="">Back to main</a>
+               </section>
+
+               <h2 class="mt-5 text-success h2" id="7">Documents(done)</h2>
+               <section class="content-container">
+                    <div class="documents-block">
+                         <a class="documents-item">
+                              <i class="bi bi-filetype-pdf"></i>
+                              <p>
+                                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quod excepturi
+                                   obcaecati cupiditate neque.
+                              </p>
+                         </a>
+                         <a class="documents-item">
+                              <i class="bi bi-filetype-doc"></i>
+                              <p>
+                                   Association
+                              </p>
+                         </a>
+                         <a class="documents-item">
+                              <i class="bi bi-filetype-png"></i>
+                              <p>
+                                   Rerum quod excepturi obcaecati
+                              </p>
+                         </a>
+                    </div>
+               </section>
+
+               <h2 class="mt-5 text-success h2" id="8">News(done)</h2>
+               <section class="content-container row">
+                    <div class="d-flex flex-column justify-content-start col-md-6">
+                         <div class="d-flex flex-row align-items-center justify-content-between">
+                              <h3 class="block-title color-blue-accent fw-semibold">Blog</h3>
+                              <span class="color-text-gray sub-title">Show more</span>
+                         </div>
+                         <div class="news-block d-flex flex-column justify-content-between mt-2 h-100 news-dark-blue">
+                              <p>Petrov-Ivanov</p>
+                              <div class="">
+                                   <span>18.02.2023</span>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-start col-md-6">
+                         <div class="d-flex flex-row">
+                              <h3 class="block-title color-blue-accent fw-semibold">Announcement</h3>
+                         </div>
+                         <div class="news-block d-flex flex-column justify-content-between mt-2 h-100 news-blue">
+                              <p>
+                                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quod excepturi
+                                   obcaecati cupiditate neque.
+                              </p>
+                              <div class="d-flex flex-row flex-wrap justify-content-between w-100">
+                                   <span>18.02.2023</span>
+                                   <span>#Line</span>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-start col-md-12">
+                         <h3 class="block-title color-blue-accent fw-semibold">Comments</h3>
+                         <div class="news-block d-flex flex-column justify-content-between mt-2 h-100 news-gray">
+                              <p>
+                                   Laborum aliquid exercitationem, quidem dicta mollitia nihil a numquam esse quod,
+                                   iusto quibusdam molestias, neque laudantium dolores? Nisi molestias ratione nemo et.
+                              </p>
+                              <div class="d-flex flex-row flex-wrap justify-content-between w-100">
+                                   <span>18.02.2023</span>
+                                   <span>#Line</span>
+                              </div>
+                         </div>
+                         <span class="color-text-gray sub-title">Comments</span>
+                    </div>
+                    <div class="my-4"></div>
+                    <div class="w-100 news-content col-md-12">
+                         <a class="news-item col-md-4">
+                              <div class="news-item__prev">
+                                   <img src="./img/pic/slider-prev.png" alt="news-prev">
+                              </div>
+                              <div class="news-item__text">
+                                   <p>
+                                        Name Surname
+                                   </p>
+                              </div>
+                              <div class="d-flex flex-row justify-content-between w-100 news-item__sub">
+                                   <span>12.08.2022</span>
+                                   <span>#Line</span>
+                              </div>
+                         </a>
+                    </div>
+               </section>
+
+               <h2 class="mt-5 text-success h2" id="9">Comments(done)</h2>
+               <section class="content-container">
+                    <div class="comments-block d-flex flex-row align-items-start">
+                         <div class="color-bg-blue-black rounded-circle comment-avatar">
+                              AO
+                         </div>
+                         <div class="d-flex flex-column p-3 comment-content-block">
+                              <strong>Name Givename</strong>
+                              <span class="mt-3">
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquid
+                                   exercitationem, quidem dicta mollitia nihil a numquam esse quod, iusto quibusdam
+                                   molestias, neque laudantium dolores? Nisi molestias ratione nemo et.
+                              </span>
+                              <ol>
+                                   <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquid
+                                        exercitationem, quidem dicta mollitia nihil a numquam esse quod, iusto quibusdam
+                                        molestias, neque laudantium dolores? Nisi molestias ratione nemo et.</li>
+                                   <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquid
+                                        exercitationem, quidem dicta mollitia nihil a numquam esse quod, iusto quibusdam
+                                        molestias, neque laudantium dolores? Nisi molestias ratione nemo et.</li>
+                              </ol>
+                              <div class="d-flex flex-row align-items-center justify-content-between mt-3 w-100">
+                                   <span class="color-text-gray">
+                                        01.03.2023
+                                   </span>
+                                   <div class="d-flex flex-row">
+                                        <div class="mx-1 btn-rating btn-like">
+                                             5
+                                        </div>
+                                        <div class="mx-1 btn-rating btn-dislike">
+                                             12
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="my-2"></div>
+                    <div class="comments-leave-block d-flex flex-row">
+                         <div class="color-bg-sky-blue rounded-circle comment-avatar">
+                              AO
+                         </div>
+                         <div class="w-100 comments-leave-input">
+                              <textarea name="" id="" class="w-100" placeholder="Live a comment"></textarea>
+                         </div>
+                    </div>
+               </section>
+
+               <h2 class="mt-5 text-success h2" id="10"> Forum(done)</h2>
+               <section class="content-container">
+                    <div class="forum-content row">
+                         <div class="d-flex justify-content-end col-12">
+                              <div id="sort-btn" class="color-text-gray">
+                                   <i class="bi bi-sort-numeric-down-alt"></i>
+                                   <span>Sort by date</span>
+                              </div>
+                         </div>
+                         <div class="d-flex my-3 col-md-4">
+                              <a class="blog-item blog-unread">
+                                   <p>
+                                        Labore porro, iste minus aliquam culpa, similique esse quod fugit voluptatibus
+                                        eligendi nihil laboriosam voluptas reprehenderit fugiat ducimus optio. Sit,
+                                        officia labore.
+                                   </p>
+                                   <span>
+                                        18.02.2023
+                                   </span>
+                              </a>
+
+                         </div>
+                         <div class="d-flex my-3 col-md-4">
+                              <a class="blog-item blog-unread">
+                                   <p>
+                                        Harum recusandae maxime, suscipit iure odit aspernatur labore laborum.
+                                   </p>
+                                   <span>14.02.2023</span>
+                              </a>
+                         </div>
+                         <div class="d-flex my-3 col-md-4">
+                              <a class="blog-item">
+                                   <p>
+                                        Sint fuga aliquid dolor nostrum dolorum et repellat, illo quod?
+                                   </p>
+                                   <span>
+                                        12.02.2023
+                                   </span>
+                              </a>
+                         </div>
+                         <div class="d-flex my-3 col-md-4">
+                              <a class="blog-item">
+                                   <p>
+                                        Odit enim dicta recusandae illum, maiores provident aperiam quis molestias, quos
+                                        adipisci ad nesciunt.
+                                   </p>
+                                   <span>
+                                        11.02.2023
+                                   </span>
+                              </a>
+                         </div>
+                         <div class="d-flex justify-content-center col-12">
+                              <nav aria-label="Page navigation example">
+                                   <ul class="pagination">
+                                        <li class="page-item">
+                                             <a class="color-bg-accent page-link color-white-text" href="#"
+                                                  aria-label="Previous">
+                                                  <span aria-hidden="true">&laquo;</span>
+                                             </a>
+                                        </li>
+                                        <li class="page-item">
+                                             <a class="color-bg-accent page-link color-white-text" href="#">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                             <a class="color-bg-accent page-link color-white-text" href="#">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                             <a class="color-bg-accent page-link color-white-text" href="#">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                             <a class="color-bg-accent page-link color-white-text" href="#"
+                                                  aria-label="Next">
+                                                  <span aria-hidden="true">&raquo;</span>
+                                             </a>
+                                        </li>
+                                   </ul>
+                              </nav>
+                         </div>
+                    </div>
+               </section>
+
+               <!-- <h2 class="mt-5 text-danger h2" id="11"> 404(not start)</h2>
+               <section class="content-container">
+
+               </section> -->
+
+               <h2 class="mt-5 text-success h2" id="12"> Search(done)</h2>
+               <section class="content-container">
+                    <div class="search-bar fs-18">
+                         <input type="text" name="" id="" class="search-input" placeholder="Search...">
+                         <button class="search-btn">Search</button>
+                    </div>
+                    <div class="mt-2 color-text-gray">
+                         <span>Found:</span>
+                         <span>0</span>
+                    </div>
+                    <div class="mt-5 color-text-gray">
+                         <span>By request</span> <span class="color-blue-accent">Petrov Ivanov</span> <span> nothing
+                              found</span>
+                    </div>
+                    <a class="search-output" href="#">
+                         <strong class="color-black">
+                              Ad ratione nemo, autem voluptatum dolor facere doloremque perferendis a omnis repellendus
+                              corporis quidem maxime quasi beatae rem culpa hic id! Reiciendis.
+                         </strong>
+                         <div class="search-output__path">
+                              <span>Main</span>
+                              <span>News</span>
+                         </div>
+                    </a>
+               </section>
+
+               <h2 class="mt-5 text-success h2" id="13"> Breadcrumbs(done)</h2>
+               <section class="content-container">
+                    <div class="breadcrumbs">
+                         <a href="./index.html">Main</a>
+                         <a href="./about-main.html">About</a>
+                         <a href="./management.html">Management</a>
+                    </div>
+               </section>
+
+               <h2 class="mt-5 text-success h2" id="16"> Marquee (done)</h2>
+               <section class="content-container">
+                    <!-- direction="left" onmouseover="this.stop();" onmouseout="this.start();" class="marquee-log" -->
+                    <div class="w-100 marquee-container">
+                         <div class="swiper swiper-marquee marquee">
+                              <div class="swiper-wrapper">
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <p>
+                                                  Et, unde. Possimus amet nam nobis.
+                                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Belarus_gerb.png" alt="Belarus_gerb">
+                                             <p>
+                                                  Aliquam iusto iste assumenda, consectetur blanditiis nulla modi
+                                                  possimus cumque culpa sequi!
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Belta.png" alt="Belta">
+                                             <p>
+                                                  Name
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Belarus_gerb.png" alt="Belarus_gerb">
+                                             <p>
+                                                  Voluptas incidunt consequatur fugiat vero alias, magnam qui.
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Nodo.png" alt="Nodo">
+                                             <p>
+                                                  Et, unde
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Bird.png" alt="Bird">
+                                             <p>
+                                                  Possimus amet nam nobis.
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/BFFS.png" alt="BFFS">
+                                             <p>
+                                                  Asperiores ipsa animi a quos accusamus pariatur ipsum esse beatae
+                                                  praesentium fugit
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <p>
+                                                  Lorem ipsum dolor, sit amet consectetur adipisicing elit
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Belarus_gerb.png" alt="Belarus_gerb">
+                                             <p>
+                                                  Cumque exercitationem dignissimos, qui voluptatibus inventore porro
+                                                  aspernatur voluptatem.
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Belta.png" alt="Belta">
+                                             <p>
+                                                  Name 2
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Belarus_gerb.png" alt="Belarus_gerb">
+                                             <p>
+                                                  Cumque exercitationem dignissimos, qui voluptatibus inventore porro
+                                                  aspernatur voluptatem.
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Nodo.png" alt="Nodo">
+                                             <p>
+                                                  Et, unde
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Bird.png" alt="Bird">
+                                             <p>
+                                                  Possimus amet nam nobis.
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/BFFS.png" alt="BFFS">
+                                             <p>
+                                                  Asperiores ipsa animi a quos accusamus pariatur ipsum esse beatae
+                                                  praesentium fugit
+                                             </p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+
+               <h2 class="mt-5 text-success h2" id="17">User header (done)</h2>
+               <section class="content-container">
+                    <div class="d-flex align-items-center justify-content-between w-100 user-header fs-18">
+                         <div>
+                              <i class="me-2 bi bi-person"></i>
+                              <span>Ivanov Ivan</span>
+                         </div>
+                         <span>Logout</span>
+                    </div>
+               </section>
+
+               <h2 class="mt-5 text-warning h2" id="18">Blog (in progress)</h2>
+               <section class="content-container">
+
+               </section>
+
+               <h2 class="mt-5 text-info h2" id="14"> Footer(in test)</h2>
+               <section class="content-container">
+                    <footer class="d-flex justify-content-center pt-3 pb-3 w-100 footer">
+     <div class="d-flex flex-column content-container">
+          <div class="w-100 row">
+               <div class="d-flex flex-column col-md-6">
+                    <div class="footer-title"><a href="./contact.html">Contacts</a></div>
+                    <div class="flex-column mt-3 footer-contact footer-text">
+                         <p>Lorem ipsum dolor sit amet</p>
+                         <a href="mailto:email@email.com">E-mail: email@email.com</a>
+                         <a href="tel:+375111111111">Phone: +375 11 111 11 11</a>
+                    </div>
+               </div>
+               <div class="d-flex flex-column col-md-6">
+                    <div class="footer-title"><a href="./about-main.html">About us</a></div>
+                    <div class="footer-title"><a href="./news.html">News</a></div>
+                    <div class="footer-title"><a href="./blog.html">Blog</a></div>
+                    <div class="footer-title"><a href="./explanations.html">Explanations and comments</a></div>
+               </div>
+          </div>
+
+          <div class="align-items-end justify-content-between mt-4 w-100 row">
+               <div class="footer-text col-md-6">
+                    <p>
+                         © 2023, All rights reserved
+                    </p>
+               </div>
+               <div class="footer-text col-md-6">
+                    <p>
+                         Site developed by
+                    </p>
+               </div>
+          </div>
+     </div>
+</footer>
+               </section>
+
+               <!-- cookie -->
+<div class="fixed-bottom m-auto mb-3 cookies container">
+     <div class="alert alert-dismissible fade show" role="alert" id="cookiesAlert">
+          <div class="d-flex flex-column flex-md-row align-items-center w-100 text-center">
+               <div class="cookies-main">
+                    <span class="me-4">
+                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, voluptates alias minima
+                         quod expedita tempora hic
+                         <a type="button" data-bs-toggle="modal" data-bs-target="#cookieModal">
+                              Settings cookies
+                         </a>
+                    </span>
+               </div>
+               <div class="d-flex flex-column flex-sm-row justify-content-lg-end mt-2 mt-md-0 w-100 cookies-close">
+                    <a class="my-1 my-md-0 me-4 mt-lg-0 mt-md-2 w-100 button" data-bs-dismiss="alert"
+                         aria-label="Close">Accept all</a>
+                    <a class="my-1 my-md-0 me-4 mt-lg-0 mt-md-2 w-100 button" data-bs-dismiss="alert"
+                         aria-label="Close">Reject all</a>
+               </div>
+          </div>
+     </div>
+
+     <!-- cookie modal -->
+
+</div>
+<div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+               <div class="d-flex align-items-start border-bottom-0 modal-header">
+                    <h5 class="ms-0 ps-2 modal-title fw-bold" id="cookieModalLabel">
+                         We use cookies!
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="px-4 pt-0 pb-4 modal-body">
+                    <p>We use cookies to ensure the convenience of users of the site and improve the quality of its
+                         operation.</p>
+                    <div id="accordion">
+                         <div id="cookieAccordion">
+                              <div class="item-accordion">
+                                   <h4 id="headingСookie-1">
+                                        <button class="d-flex align-items-center item-accordion__button" type="button"
+                                             data-bs-toggle="collapse" data-bs-target="#cookie-1" aria-expanded="true"
+                                             aria-controls="cookie-1">
+                                             <span class="me-2 me-md-4 item-accordion__button_icon"></span>
+                                             <span class="item-accordion__button_text">
+                                                  Technical (required)</span>
+                                        </button>
+                                        <div class="form-check form-switch">
+                                             <input class="form-check-input" type="checkbox" role="switch"
+                                                  id="#cookieCheck-1" checked disabled>
+                                        </div>
+                                   </h4>
+                                   <div id="cookie-1" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingСookie-1" data-bs-parent="#cookieAccordion" style="">
+                                        <div class="item-accordion__body">
+                                             Are necessary for the uninterrupted and reliable
+                                             operation of the site. Disabling this type of cookies
+                                             can lead to restrictions in access to certain
+                                             functions of the site, stored for no more than 1 year.
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="item-accordion">
+                                   <h4 id="headingСookie-2">
+                                        <button class="collapsed d-flex align-items-center item-accordion__button"
+                                             type="button" data-bs-toggle="collapse" data-bs-target="#cookie-2"
+                                             aria-expanded="false" aria-controls="cookie-2">
+                                             <span class="me-2 me-md-4 item-accordion__button_icon"></span>
+                                             <span class="item-accordion__button_text">Functional</span>
+                                        </button>
+                                        <div class="form-check form-switch" id="form-switch">
+                                             <input class="form-check-input" type="checkbox" role="switch"
+                                                  id="#cookieCheck-2">
+                                        </div>
+                                   </h4>
+                                   <div id="cookie-2" class="accordion-collapse collapse"
+                                        aria-labelledby="headingСookie-2" data-bs-parent="#cookieAccordion" style="">
+                                        <div class="item-accordion__body">
+                                             Allow to ensure the individual experience of using the site,
+                                             are stored in the memory of the device for a certain period
+                                             of time and respond to the personal preferences of the user,
+                                             set in the browser, stored for no more than 1 year.
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="item-accordion">
+                                   <h4 id="headingСookie-3">
+                                        <button class="collapsed d-flex align-items-center item-accordion__button"
+                                             type="button" data-bs-toggle="collapse" data-bs-target="#cookie-3"
+                                             aria-expanded="false" aria-controls="cookie-3">
+                                             <span class="me-2 me-md-4 item-accordion__button_icon"></span>
+                                             <span class="item-accordion__button_text">Statistical</span>
+                                        </button>
+                                        <div class="form-check form-switch">
+                                             <input class="form-check-input" type="checkbox" role="switch"
+                                                  id="#cookieCheck-1">
+                                        </div>
+                                   </h4>
+                                   <div id="cookie-3" class="accordion-collapse collapse"
+                                        aria-labelledby="headingСookie-3" data-bs-parent="#cookieAccordion" style="">
+                                        <div class="item-accordion__body">
+                                             Needed to track pages and sections of the site visited
+                                             by the user, as well as to identify possible errors in the work
+                                             site. The information collected by this type of cookie is anonymous and
+                                             necessary for the effective maintenance and updating of the site, stored
+                                             for no more than 1 year.
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row mt-3 cookies-close">
+                         <a class="button" data-bs-dismiss="alert" aria-label="Close">Accept all</a>
+                         <a class="my-3 my-lg-0 ms-lg-3 button" data-bs-dismiss="alert" aria-label="Close">Reject
+                              all</a>
+                         <a class="ms-lg-auto button" data-bs-dismiss="alert" aria-label="Close">Save settings</a>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>
+
+          </div>
+
+
+     </main>
+
+     <script src="js/script.min.js"></script>
+</body>
+
+</html>

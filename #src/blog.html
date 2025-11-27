@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+@@include('_head.html',{
+"title":"Blog"
+})
+
+<body>
+     @@include('_header.html')
+     <main>
+          <section class="content-container">
+               <div class="row">
+                    <div class="d-flex flex-wrap align-items-center justify-content-between col-12">
+                         <div class="d-flex justify-content-start my-1">
+                              <h1 class="section-title color-blue-accent fw-semibold">Blog</h1>
+                         </div>
+                         <div class="d-flex justify-content-end my-1">
+                              <div id="sort-btn" class="color-text-gray">
+                                   <i class="bi bi-sort-numeric-down-alt"></i>
+                                   <span>Sort by date</span>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="d-flex my-3 col-md-4">
+                         <a class="blog-item full-blog">
+                              <p>
+                                   Nemo earum
+                                   veniam ad architecto quasi aspernatur aliquam ipsa pariatur alias!
+                              </p>
+                              <span>
+                                   18.02.2023
+                              </span>
+                         </a>
+
+                    </div>
+                    <div class="d-flex my-3 col-md-4">
+                         <a class="blog-item full-blog">
+                              <p>
+                                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                              </p>
+                              <span>14.02.2023</span>
+                         </a>
+                    </div>
+                    <div class="d-flex my-3 col-md-4">
+                         <a class="blog-item full-blog">
+                              <p>
+                                   Ducimus quibusdam nemo
+                                   saepe mollitia praesentium odit necessitatibus iste consequuntur officiis!
+                              </p>
+                              <span>
+                                   12.02.2023
+                              </span>
+                         </a>
+                    </div>
+                    <div class="d-flex my-3 col-md-4">
+                         <a class="blog-item full-blog">
+                              <p>
+                                   Soluta at officiis placeat harum quo nobis!
+                              </p>
+                              <span>
+                                   11.02.2023
+                              </span>
+                         </a>
+                    </div>
+                    <div class="d-flex justify-content-center col-12">
+                         <nav aria-label="Page navigation example">
+                              <ul class="pagination">
+                                   <li class="page-item">
+                                        <a class="color-bg-accent page-link color-white-text" href="#"
+                                             aria-label="Previous">
+                                             <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                   </li>
+                                   <li class="page-item">
+                                        <a class="color-bg-accent page-link color-white-text" href="#">1</a>
+                                   </li>
+                                   <li class="page-item">
+                                        <a class="color-bg-accent page-link color-white-text" href="#">2</a>
+                                   </li>
+                                   <li class="page-item">
+                                        <a class="color-bg-accent page-link color-white-text" href="#">3</a>
+                                   </li>
+                                   <li class="page-item">
+                                        <a class="color-bg-accent page-link color-white-text" href="#"
+                                             aria-label="Next">
+                                             <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                   </li>
+                              </ul>
+                         </nav>
+                    </div>
+               </div>
+          </section>
+     </main>
+     @@include('_footer.html')
+     @@include('_script.html')
+</body>
+
+</html>

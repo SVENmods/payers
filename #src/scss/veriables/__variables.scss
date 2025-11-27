@@ -1,0 +1,58 @@
+$minWidth: 320px;
+$maxWidth: 1920px;
+$maxWidthContainer: 1344;
+$mouse-device: '(hover: hover) and (pointer: fine)';
+// $maxWidthContainerPersonal: 1830;
+
+// *Colors*
+$color-white: #FFFFFF;
+$color-blue-accent: #055687;
+$color-blue-accent-tr-2: rgba(5, 86, 135, 0.2);
+$color-white-main: #FEFEFE;
+$color-blue-black: #063958;
+$color-blue-dark: #041E2F;
+$color-black: #041E2F;
+$color-modal-back: rgba(40, 40, 40, 0.439);
+$color-background-sky-blue: #c9ebff99;
+$color-background-sky-blue-light: #c9ebff;
+$color-text-gray: #737373;
+$color-sky-blue: #C9EBFF;
+$color-background-gray-tr-4: rgba(227, 227, 227, 0.4);
+$color-background-blue-tr-2: rgba(6, 57, 88, 0.2);
+$color-bg-gray: #E3E3E3;
+$color-bg-gray-light: #F3F3F3;
+$color-bg-contact-link: #051620;
+// *------*
+
+
+// *! Fonts*
+$font-family-bold: 'Gilroy-Bold','Arial', sans-serif;
+$font-family-heavy: 'Gilroy-Heavy','Arial', sans-serif;
+$font-family-light: 'Gilroy-Light','Arial', sans-serif;
+$font-family-medium: 'Gilroy-Medium','Arial', sans-serif;
+$font-family-regular: 'Gilroy-Regular', 'Arial';
+
+$fontSize: 16px;
+// *!------*
+
+// *? Border*
+$border-top-25: 25px 25px 0px 0px;
+$border-main: 25px;
+$border-20: 20px;
+// *?------*
+
+// *! Transition *
+$transition-main-3: all ease-out .3s;
+// *!------*
+
+
+// *? Media rules*
+$mouse-device: '(hover: hover) and (pointer: fine)';
+$ui-mobile: 'screen and (max-width: 650px)';
+$ui-tablet: 'screen and (max-width: 910px)';
+
+// *! z-indexs* 
+$layer-all-base: 2;
+$layer-ui-basic: 3; //header, footer, menu
+$layer-modal: 4;
+// *!------*

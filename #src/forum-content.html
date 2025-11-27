@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+@@include('_head.html',{
+"title":"Lorem ipsum dolor sit amet"
+})
+
+<body>
+     <div class="align-items-center justify-content-center w-100 user-header fs-18">
+          <div class="d-flex flex-row align-items-center justify-content-between w-100 content-container">
+               <div>
+                    <i class="me-2 bi bi-person"></i>
+                    <span>Name Surname</span>
+               </div>
+               <span>Logout</span>
+          </div>
+     </div>
+     @@include('_header.html')
+     <main>
+          <section class="content-container">
+               <div class="breadcrumbs">
+                    <a href="./main.html">Main</a>
+                    <a href="./forum.html">Forum</a>
+                    <a href="./forum-content.html">Lorem ipsum dolor sit amet</a>
+               </div>
+               <span class="color-blue-dark fs-18">18.02.2023</span>
+               <h1 class="mt-2 section-title color-blue-accent fw-semibold">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Vero iusto similique
+                    necessitatibus!
+               </h1>
+               <div class="d-flex flex-column align-items-start mt-3 comment-container">
+                    <p>
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, cumque ducimus mollitia
+                         ab illum voluptatum quibusdam laborum exercitationem possimus distinctio incidunt ex, ullam est
+                         accusamus iure. Illum aperiam voluptatibus quam!
+                    </p>
+                    <p>
+                         Architecto, aliquam commodi! Libero eos perferendis, mollitia
+                         alias, beatae consequatur sunt aliquid debitis labore aliquam vel corrupti itaque unde vero
+                         quisquam ex.
+                    </p>
+
+                    <div class="color-bg-sky-blue mt-4 border-25 btn-approved">
+                         Set the mark «I have read»
+                    </div>
+                    <div class="d-flex flex-column align-items-start mt-5 w-100">
+                         <div class="comments-block d-flex flex-row align-items-start w-100">
+                              <div class="color-bg-blue-black rounded-circle comment-avatar">
+                                   AO
+                              </div>
+                              <div class="d-flex flex-column p-3 w-100 comment-content-block">
+                                   <strong>Name Surname</strong>
+                                   <span class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                                        iusto similique
+                                        necessitatibus, laboriosam tempora laudantium eligendi iure illo tenetur fugiat
+                                        eum,
+                                        ea neque quo nesciunt. Voluptatem rerum nostrum alias asperiores!</span>
+                                   <div
+                                        class="d-flex flex-row flex-wrap align-items-center justify-content-between mt-2 w-100">
+                                        <span class="my-2 color-text-gray">
+                                             01.03.2023
+                                        </span>
+                                        <div class="d-flex flex-row my-2">
+                                             <div class="mx-1 btn-rating btn-like">
+                                                  5
+                                             </div>
+                                             <div class="mx-1 btn-rating btn-dislike">
+                                                  12
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="comments-block d-flex flex-row align-items-start w-100">
+                              <div class="color-bg-blue-black rounded-circle comment-avatar">
+                                   AO
+                              </div>
+                              <div class="d-flex flex-column p-3 w-100 comment-content-block">
+                                   <strong>Name Surname</strong>
+                                   <span class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                                        iusto similique
+                                        necessitatibus, laboriosam tempora laudantium eligendi iure illo tenetur fugiat
+                                        eum,
+                                        ea neque quo nesciunt. Voluptatem rerum nostrum alias asperiores!</span>
+                                   <div
+                                        class="d-flex flex-row flex-wrap align-items-center justify-content-between mt-2 w-100">
+                                        <span class="my-2 color-text-gray">
+                                             01.03.2023
+                                        </span>
+                                        <div class="d-flex flex-row my-2">
+                                             <div class="mx-1 btn-rating btn-like">
+                                                  10
+                                             </div>
+                                             <div class="mx-1 btn-rating btn-dislike">
+                                                  2
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="comments-leave-block d-flex flex-row w-100">
+                              <div class="color-bg-sky-blue rounded-circle comment-avatar">
+                                   AO
+                              </div>
+                              <div class="w-100 comments-leave-input">
+                                   <textarea name="" id="" class="w-100" placeholder="Leave your comment"></textarea>
+                              </div>
+                         </div>
+                         <div class="color-bg-sky-blue mt-3 border-25 btn-approved">
+                              Leave a comment
+                         </div>
+                    </div>
+               </div>
+          </section>
+     </main>
+     @@include('_footer.html')
+     @@include('_script.html')
+</body>
+
+</html>

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+@@include('_head.html',{
+"title":"Payers"
+})
+
+<body>
+     @@include('_header.html')
+     <main>
+          <section class="content-container">
+               <div class="justify-content-center mx-0 my-2 my-md-0 w-100 h-100 banner banner-main row">
+                    <div class="d-flex flex-column align-items-end justify-content-center col-md-5">
+                         <p class="pe-none">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cumque repudiandae
+                              distinctio quia, perferendis iste qui sequi laudantium illum.
+                         </p>
+                         <em>No name</em>
+                    </div>
+                    <picture class="my-2 my-md-0 pe-0 col-md-7">
+                         <source media="(min-width: 650px)" srcset="./img/banners/banner-main.svg">
+                         <img src="./img/banners/banner-main.png" alt="banner-main">
+                    </picture>
+               </div>
+          </section>
+          <section class="d-flex flex-row justify-content-between w-100 content-container news-container row">
+               <div class="justify-content-start col-md-4 row">
+                    <div class="align-items-center mx-0 ps-0 col-12 row">
+                         <div class="mx-0 px-0 text-start col-6">
+                              <h3 class="block-title color-blue-accent fw-semibold">News</h3>
+                         </div>
+                         <div class="pe-0 text-end col-6">
+                              <a href="./news.html" class="color-text-gray sub-title">All news</a>
+                         </div>
+                    </div>
+                    <div class="mt-3 ps-0 col-12">
+                         <div class="swiper swiper-news swiper-with-img">
+                              <div class="swiper-wrapper">
+                                   <div class="swiper-slide">
+                                        <div class="d-flex flex-column justify-content-between pb-3 swiper-content"
+                                             onclick="location.href='./news-content.html';">
+                                             <div class="d-flex flex-column slide-tumbnail">
+                                                  <div class="slide-tumbnail__img">
+                                                       <img src="./img/pic/slider-prev.png" alt="slider-prev">
+                                                  </div>
+                                                  <div class="slide-text">
+                                                       <p>
+                                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Inventore veritatis porro eius
+                                                       </p>
+                                                  </div>
+                                             </div>
+                                             <div class="align-items-center slide-footer row">
+                                                  <div class="my-2 text-start col-6">
+                                                       <span>12.08.2022</span>
+                                                  </div>
+                                                  <div class="my-2 text-end col-6">
+                                                       <span>#Line</span>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="d-flex flex-column justify-content-between pb-3 swiper-content"
+                                             onclick="location.href='./news-content.html';">
+                                             <div class="d-flex flex-column slide-tumbnail">
+                                                  <div class="slide-tumbnail__img">
+                                                       <img src="./img/pic/slider-prev.png" alt="slider-prev">
+                                                  </div>
+                                                  <div class="slide-text">
+                                                       <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Dolores quae expedita ducimus optio
+                                                            eligendi, inventore nobis repellendus rerum
+                                                            aliquid nam vitae. Error molestias nemo
+                                                            repellat facere deleniti atque pariatur excepturi!
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit.
+                                                       </p>
+                                                  </div>
+                                             </div>
+                                             <div class="slide-footer row">
+                                                  <div class="text-start col-6">
+                                                       <span>12.08.2022</span>
+                                                  </div>
+                                                  <div class="text-end col-6">
+                                                       <span>#Line</span>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="d-flex flex-column justify-content-between pb-3 swiper-content"
+                                             onclick="location.href='./news-content.html';">
+                                             <div class="d-flex flex-column slide-tumbnail">
+                                                  <div class="slide-tumbnail__img">
+                                                       <img src="./img/pic/slider-prev.png" alt="slider-prev">
+                                                  </div>
+                                                  <div class="slide-text">
+                                                       <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Dolores quae expedita ducimus optio
+                                                            eligendi, inventore nobis repellendus rerum
+                                                            aliquid nam vitae. Error molestias nemo
+                                                            repellat facere deleniti atque pariatur excepturi!
+                                                       </p>
+                                                  </div>
+                                             </div>
+                                             <div class="slide-footer row">
+                                                  <div class="text-start col-6">
+                                                       <span>12.08.2022</span>
+                                                  </div>
+                                                  <div class="text-end col-6">
+                                                       <span>#Line</span>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="swiper-pagination"></div>
+                         </div>
+                    </div>
+               </div>
+               <div class="d-flex flex-column justify-content-between mb-4 col-md-8">
+                    <div class="d-flex flex-row row">
+                         <div class="d-flex flex-column justify-content-start my-2 my-md-0 col-md-6">
+                              <div
+                                   class="d-flex flex-row flex-wrap align-items-center justify-content-between text-nowrap">
+                                   <h3 class="block-title text-start color-blue-accent fw-semibold">Blog</h3>
+                                   <a href="./blog.html" class="color-text-gray text-end sub-title">Show more</a>
+                              </div>
+                              <div
+                                   class="news-block d-flex flex-column justify-content-between mt-2 h-100 news-dark-blue">
+                                   <p>Name Surname</p>
+                                   <div class="">
+                                        <span>18.02.2023</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="d-flex flex-column justify-content-start my-2 my-md-0 col-md-6">
+                              <div class="d-flex flex-row">
+                                   <h3 class="block-title color-blue-accent fw-semibold">Announcement</h3>
+                              </div>
+                              <div class="news-block d-flex flex-column justify-content-between mt-2 h-100 news-blue">
+                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                   <div class="d-flex flex-row flex-wrap justify-content-between w-100">
+                                        <span>18.02.2023</span>
+                                        <span>#Line</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="">
+                         <div class="d-flex flex-column justify-content-start col-md-12">
+                              <h3 class="block-title color-blue-accent fw-semibold">Comments</h3>
+                              <div class="news-block d-flex flex-column justify-content-between mt-2 h-100 news-gray">
+                                   <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum possimus iusto
+                                        non facere.
+                                   </p>
+                                   <div class="d-flex flex-row flex-wrap justify-content-between w-100">
+                                        <span>18.02.2023</span>
+                                        <span>#Line</span>
+                                   </div>
+                              </div>
+                              <a href="./explanations.html" class="mt-2 color-text-gray sub-title">All comments</a>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="content-container">
+               <div class="justify-content-between mx-0 w-100 banner banner-numbers row">
+                    <div
+                         class="d-flex flex-row flex-md-column align-items-center my-2 my-md-0 text-md-center col-md-4 col-sm-12 row banner-numbers__text">
+                         <span class="col-4 col-md-12">7</span>
+                         <span class="col-8 col-md-12">years of work</span>
+                    </div>
+                    <div
+                         class="d-flex flex-row flex-md-column align-items-center my-2 my-md-0 text-md-center col-md-4 col-sm-12 row banner-numbers__text">
+                         <span class="col-4 col-md-12">70+</span>
+                         <span class="col-8 col-md-12">achievements</span>
+                    </div>
+                    <div
+                         class="d-flex flex-row flex-md-column align-items-center my-2 my-md-0 text-md-center col-md-4 col-sm-12 row banner-numbers__text">
+                         <span class="col-4 col-md-12">140</span>
+                         <span class="col-8 col-md-12">works</span>
+                    </div>
+               </div>
+          </section>
+          <section class="content-container">
+               <h1 class="section-title color-blue-accent fw-semibold">Activities</h1>
+               <div class="mt-4 w-100">
+                    <div class="swiper swiper-event">
+                         <div class="swiper-wrapper">
+                              <a class="swiper-slide" href="google.com">
+                                   <div
+                                        class="d-flex flex-column justify-content-between pb-3 swiper-content-img swiper-content">
+                                        <div class="d-flex flex-column slide-tumbnail">
+                                             <div class="slide-text">
+                                                  <p>
+                                                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                  </p>
+                                             </div>
+                                        </div>
+                                        <div class="slide-footer row">
+                                             <div class="text-start col-6">
+                                                  <span>12.08.2022</span>
+                                             </div>
+                                             <div class="text-end col-6">
+                                                  <span>#Line</span>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </a>
+                              <a class="swiper-slide" href="google.com">
+                                   <div
+                                        class="d-flex flex-column justify-content-between pb-3 swiper-content-img swiper-content">
+                                        <div class="d-flex flex-column slide-tumbnail">
+                                             <div class="slide-text">
+                                                  <p>
+                                                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab eos,
+                                                       sint similique cupiditate atque totam, aliquam consectetur enim
+                                                       suscipit nemo, deleniti blanditiis.
+                                                  </p>
+                                             </div>
+                                        </div>
+                                        <div class="slide-footer row">
+                                             <div class="text-start col-6">
+                                                  <span>12.08.2022</span>
+                                             </div>
+                                             <div class="text-end col-6">
+                                                  <span>#Line</span>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </a>
+                              <a class="swiper-slide" href="google.com">
+                                   <div
+                                        class="d-flex flex-column justify-content-between pb-3 swiper-content-img swiper-content">
+                                        <div class="d-flex flex-column slide-tumbnail">
+                                             <div class="slide-text">
+                                                  <p>
+                                                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                  </p>
+                                             </div>
+                                        </div>
+                                        <div class="slide-footer row">
+                                             <div class="text-start col-6">
+                                                  <span>12.08.2022</span>
+                                             </div>
+                                             <div class="text-end col-6">
+                                                  <span>#Line</span>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </a>
+                              <a class="swiper-slide" href="google.com">
+                                   <div
+                                        class="d-flex flex-column justify-content-between pb-3 swiper-content-img swiper-content">
+                                        <div class="d-flex flex-column slide-tumbnail">
+                                             <div class="slide-text">
+                                                  <p>
+                                                       Lorem ipsum dolor sit amet consectetur adipisicing
+                                                       elit. Dolores quae expedita ducimus optio
+                                                       eligendi, inventore nobis repellendus rerum
+                                                       aliquid nam vitae. Error molestias nemo
+                                                       repellat facere deleniti atque pariatur excepturi!
+                                                  </p>
+                                             </div>
+                                        </div>
+                                        <div class="slide-footer row">
+                                             <div class="text-start col-6">
+                                                  <span>12.08.2022</span>
+                                             </div>
+                                             <div class="text-end col-6">
+                                                  <span>Line</span>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                         <!-- If we need navigation buttons -->
+                         <div class="swiper-button-prev"></div>
+                         <div class="swiper-button-next"></div>
+                         <!-- If we need scrollbar -->
+                    </div>
+               </div>
+          </section>
+          <section class="content-container">
+               <span class="section-title color-blue-accent fw-semibold fs-1">Advantages</span>
+               @@include('_adv-cards.html')
+               @@include('_enter-form.html')
+               <div class="mx-0 mt-5 w-100 banner banner-part row">
+                    <div class="align-items-center col-md-12 row banner-part__text fw-bold">
+                         <span class="col-2">17</span>
+                         <span class="d-flex align-items-center justify-content-start col-10">Organizations </span>
+                    </div>
+                    <div class="justify-content-between mt-3 col-md-12 row">
+                         <img class="col-2" src="./img/banners/partners/taikiri.png" alt="taikiri" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/finexpertiza.png" alt="finexpertiza"
+                              loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/a1.png" alt="a1" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/oma.png" alt="oma" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/salt.png" alt="salt" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/kvg.png" alt="kvg" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/granit.png" alt="granit" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/pik.png" alt="pik" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/tabak.png" alt="tabak" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/sodrujestvo.png" alt="sodrujestvo"
+                              loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/sosedi.png" alt="sosedi" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/evroopt.png" alt="evroopt" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/revera.png" alt="revera" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/urspektr.png" alt="urspektr" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/arlepta.png" alt="arlepta" loading="lazy">
+                    </div>
+               </div>
+               <div
+                    class="justify-content-md-between align-items-center justify-content-center mx-0 mt-5 px-4 py-md-0 w-100 banner banner-email row">
+                    <div class="d-xl-block p-0 d-none col-xl-2">
+                         <picture class="">
+                              <source media="(min-width: 650px)" srcset="./img/banners/banner-email.svg">
+                              <img src="./img/banners/banner-email.png" alt="banner-email">
+                         </picture>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between my-2 p-0 col-12 col-xl-9 row">
+                         <div class="my-2 banner-email__text col-md-6">
+                              <span>Subscribe</span>
+                              <p class="mt-1 mb-0">
+                                   Lorem ipsum dolor sit amet consectetur.
+                              </p>
+                         </div>
+                         <div
+                              class="d-flex flex-row align-items-center justify-content-between my-2 banner-email__input col-md-5">
+                              <input type="email" id="bannerEmail" class="w-100" placeholder="Email">
+                              <button class="bi-arrow-right bg-transparent bi color-blue-accent"></button>
+                         </div>
+                    </div>
+               </div>
+               <div
+                    class="justify-content-md-between align-items-center justify-content-center mx-0 mt-5 px-4 py-md-0 w-100 banner banner-email row">
+                    <div class="d-xl-block p-0 d-none col-xl-2">
+                         <picture class="">
+                              <source media="(min-width: 650px)" srcset="./img/banners/banner-email.svg">
+                              <img src="./img/banners/banner-email.png" alt="banner-email">
+                         </picture>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between my-2 p-0 col-12 col-xl-9 row">
+                         <div class="my-2 banner-email__text col-md-6">
+                              <span>Subscribe</span>
+                              <p class="mt-1 mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+                         </div>
+                         <div
+                              class="d-flex flex-row align-items-center justify-content-between my-2 banner-email__input banner-email__input-error col-md-5">
+                              <input type="email" id="bannerEmail" class="w-100" placeholder="Email">
+                              <button class="bi-arrow-right bg-transparent bi color-blue-accent"></button>
+                         </div>
+                    </div>
+               </div>
+               </div>
+               <div class="content-container">
+                    <div class="w-100 marquee-container">
+                         <div class="swiper swiper-marquee marquee">
+                              <div class="swiper-wrapper">
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <p>
+                                                  Et, unde. Possimus amet nam nobis.
+                                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Belarus_gerb.png" alt="Belarus_gerb">
+                                             <p>
+                                                  Aliquam iusto iste assumenda, consectetur blanditiis nulla modi
+                                                  possimus cumque culpa sequi!
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Belta.png" alt="Belta">
+                                             <p>
+                                                  Name
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Belarus_gerb.png" alt="Belarus_gerb">
+                                             <p>
+                                                  Voluptas incidunt consequatur fugiat vero alias, magnam qui.
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Nodo.png" alt="Nodo">
+                                             <p>
+                                                  Et, unde
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Bird.png" alt="Bird">
+                                             <p>
+                                                  Possimus amet nam nobis.
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/BFFS.png" alt="BFFS">
+                                             <p>
+                                                  Asperiores ipsa animi a quos accusamus pariatur ipsum esse beatae
+                                                  praesentium fugit
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <p>
+                                                  Lorem ipsum dolor, sit amet consectetur adipisicing elit
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Belarus_gerb.png" alt="Belarus_gerb">
+                                             <p>
+                                                  Cumque exercitationem dignissimos, qui voluptatibus inventore porro
+                                                  aspernatur voluptatem.
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Belta.png" alt="Belta">
+                                             <p>
+                                                  Name 2
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Belarus_gerb.png" alt="Belarus_gerb">
+                                             <p>
+                                                  Cumque exercitationem dignissimos, qui voluptatibus inventore porro
+                                                  aspernatur voluptatem.
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Nodo.png" alt="Nodo">
+                                             <p>
+                                                  Et, unde
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Bird.png" alt="Bird">
+                                             <p>
+                                                  Possimus amet nam nobis.
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/BFFS.png" alt="BFFS">
+                                             <p>
+                                                  Asperiores ipsa animi a quos accusamus pariatur ipsum esse beatae
+                                                  praesentium fugit
+                                             </p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+     </main>
+     @@include('_footer.html')
+     @@include('_script.html')
+</body>
+
+</html>

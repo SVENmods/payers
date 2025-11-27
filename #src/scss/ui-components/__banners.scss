@@ -1,0 +1,112 @@
+.banner{
+     padding: 1.875rem;
+     @media #{$ui-tablet} {
+          padding: 1.125rem;
+     }
+     border-radius: $border-main;
+}
+.banner-main{
+     padding-right: 0;
+     background-color: $color-background-sky-blue;
+     padding: 2.5rem 1rem;
+     @media #{$ui-tablet} {
+          padding: 2.5rem .5rem;
+     }
+     picture{
+          source, img{
+               width: 100%;
+          }
+     }
+     color: $color-blue-black;
+     p{
+          font-weight: 600;
+          @include adaptiv-value("font-size", 32, 20, 1);
+          @include adaptiv-value("line-height", 32, 20, 1);
+     }
+     p ~ em{
+          @include adaptiv-value("font-size", 24, 16, 1);
+          @include adaptiv-value("line-height", 29, 19, 1);
+     }
+}
+
+.banner-numbers{
+     background-color: $color-blue-accent;
+     color: $color-white-main;
+     &__text{
+          :first-child{
+               @include adaptiv-value("font-size", 82, 45, 1);
+               @include adaptiv-value("line-height", 98, 54, 1);
+          }
+          @include adaptiv-value("font-size", 20, 16, 1);
+          @include adaptiv-value("line-height", 24, 28, 1);
+     }
+}
+
+.banner-part{
+     background-color: $color-blue-accent;
+     color: $color-white-main;
+     &__text{
+          :first-child{
+               @include adaptiv-value("font-size", 120, 40, 1);
+               @include adaptiv-value("line-height", 149, 50, 1);
+          }
+          @include adaptiv-value("font-size", 52, 16, 1);
+          @include adaptiv-value("line-height", 51, 16, 1);
+     }
+     img{
+          opacity:  0.6;
+          // mix-blend-mode:multiply;
+          filter: brightness(0) invert(1);
+          cursor: pointer;
+          transition: $transition-main-3;
+          max-width: 173px;
+          @media #{$mouse-device} {
+               &:hover{
+                    // filter: grayscale(0%);
+                    opacity:  1;
+                    filter: none;
+               }
+          }
+     }
+}
+
+.banner-email{
+     background-color: $color-background-sky-blue;
+     color: $color-blue-accent;
+     &__text{
+          :first-child{
+               @include adaptiv-value("font-size", 20, 16, 1);
+               @include adaptiv-value("line-height", 25, 20, 1);
+               font-weight: 600;
+          }
+          @include adaptiv-value("font-size", 17, 16, 1);
+          @include adaptiv-value("line-height", 20, 19, 1);
+     }
+     &__input{
+          background-color: $color-white-main;
+          max-height: 3.625rem;
+          // max-width: 26.6875rem;
+          // width: 100%;
+          padding: 1.25rem 1rem;
+          border-radius: 19px;
+          &,input{
+               color: $color-blue-accent;
+          }
+          input{
+               background: transparent;
+          }
+          ::placeholder{
+               color: #041e2f66;
+          }
+          .bi{
+               font-size: 2rem;
+               cursor: pointer;
+          }
+     }
+     &__input-error{
+          border: 1px solid #ff0000;
+          ::placeholder{
+               color: #ff0000;
+          }
+     }
+}

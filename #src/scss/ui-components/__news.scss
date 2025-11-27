@@ -1,0 +1,108 @@
+.news-block {
+     display: flex;
+     flex-direction: column;
+     @include adaptiv-value("padding", 20, 15, 1);
+     border-radius: $border-20;
+     transition: $transition-main-3;
+     cursor: pointer;
+}
+.news-dark-blue {
+     background-color: $color-blue-accent-tr-2;
+     @media #{$mouse-device} {
+          &:hover{
+               background-color: $color-sky-blue;
+          }
+     }
+}
+.news-blue {
+     background-color: $color-sky-blue;
+     @media #{$mouse-device} {
+          &:hover{
+               background-color: $color-blue-accent-tr-2;
+          }
+     }
+}
+.news-gray {
+     background-color: $color-background-gray-tr-4;
+     @media #{$mouse-device} {
+          &:hover{
+               background-color: $color-background-sky-blue;
+          }
+     }
+}
+
+.news-content-inner{
+     p{
+          @include adaptiv-value("font-size", 20, 16, 1);
+          @include adaptiv-value("line-height", 24, 19, 1);
+          margin-top: 3.125rem;
+          @media #{$ui-tablet} {
+               margin-top: 1.875rem;
+          }
+     }
+}
+
+.news-item {
+     display: flex;
+     border-radius: 10px;
+     overflow: hidden;
+     color: $color-black;
+     cursor: pointer;
+     background-color: $color-background-gray-tr-4;
+     transition: $transition-main-3;
+     padding-bottom: 1rem;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 100%;
+     @media #{$mouse-device} {
+          &:hover{
+               background-color: $color-background-sky-blue;
+               img{
+                    transform: scale(1.2);
+               }
+          }
+     }
+	&__prev {
+          overflow: hidden;
+          &, img{
+               width: 100%;
+               height: 100%;
+               max-height: 13rem
+          }
+          img{
+               transition: $transition-main-3;
+          }
+	}
+	&__text {
+          @include adaptiv-value("font-size", 16, 14, 1);
+          @include adaptiv-value("line-height", 20, 17, 1);
+          margin-top: 1rem;
+	}
+     &__text, &__sub{
+          padding: 0 1rem;
+          @media #{$ui-tablet} {
+               padding: 0 .875rem;
+          }
+     }
+	&__sub {
+          font-size: 14px;
+          line-height: 17px;
+	}
+}
+
+.swiper-news-content{
+     .swiper-slide{
+          img{
+               width: 100%;
+               height: 100%;
+               max-width: 50.125rem;
+               max-height: 33.4375rem;
+          }
+     }
+     .swiper-button-next:after, .swiper-button-prev:after{
+          margin-top: 1.875rem;
+          @media #{$ui-tablet} {
+               color: $color-white;
+          }
+     }
+}

@@ -1,0 +1,122 @@
+<!-- cookie -->
+<div class="fixed-bottom m-auto mb-3 cookies container">
+     <div class="alert alert-dismissible fade show" role="alert" id="cookiesAlert">
+          <div class="d-flex flex-column flex-md-row align-items-center w-100 text-center">
+               <div class="cookies-main">
+                    <span class="me-4">
+                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, voluptates alias minima
+                         quod expedita tempora hic
+                         <a type="button" data-bs-toggle="modal" data-bs-target="#cookieModal">
+                              Settings cookies
+                         </a>
+                    </span>
+               </div>
+               <div class="d-flex flex-column flex-sm-row justify-content-lg-end mt-2 mt-md-0 w-100 cookies-close">
+                    <a class="my-1 my-md-0 me-4 mt-lg-0 mt-md-2 w-100 button" data-bs-dismiss="alert"
+                         aria-label="Close">Accept all</a>
+                    <a class="my-1 my-md-0 me-4 mt-lg-0 mt-md-2 w-100 button" data-bs-dismiss="alert"
+                         aria-label="Close">Reject all</a>
+               </div>
+          </div>
+     </div>
+
+     <!-- cookie modal -->
+
+</div>
+<div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+               <div class="d-flex align-items-start border-bottom-0 modal-header">
+                    <h5 class="ms-0 ps-2 modal-title fw-bold" id="cookieModalLabel">
+                         We use cookies!
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="px-4 pt-0 pb-4 modal-body">
+                    <p>We use cookies to ensure the convenience of users of the site and improve the quality of its
+                         operation.</p>
+                    <div id="accordion">
+                         <div id="cookieAccordion">
+                              <div class="item-accordion">
+                                   <h4 id="headingСookie-1">
+                                        <button class="d-flex align-items-center item-accordion__button" type="button"
+                                             data-bs-toggle="collapse" data-bs-target="#cookie-1" aria-expanded="true"
+                                             aria-controls="cookie-1">
+                                             <span class="me-2 me-md-4 item-accordion__button_icon"></span>
+                                             <span class="item-accordion__button_text">
+                                                  Technical (required)</span>
+                                        </button>
+                                        <div class="form-check form-switch">
+                                             <input class="form-check-input" type="checkbox" role="switch"
+                                                  id="#cookieCheck-1" checked disabled>
+                                        </div>
+                                   </h4>
+                                   <div id="cookie-1" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingСookie-1" data-bs-parent="#cookieAccordion" style="">
+                                        <div class="item-accordion__body">
+                                             Are necessary for the uninterrupted and reliable
+                                             operation of the site. Disabling this type of cookies
+                                             can lead to restrictions in access to certain
+                                             functions of the site, stored for no more than 1 year.
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="item-accordion">
+                                   <h4 id="headingСookie-2">
+                                        <button class="collapsed d-flex align-items-center item-accordion__button"
+                                             type="button" data-bs-toggle="collapse" data-bs-target="#cookie-2"
+                                             aria-expanded="false" aria-controls="cookie-2">
+                                             <span class="me-2 me-md-4 item-accordion__button_icon"></span>
+                                             <span class="item-accordion__button_text">Functional</span>
+                                        </button>
+                                        <div class="form-check form-switch" id="form-switch">
+                                             <input class="form-check-input" type="checkbox" role="switch"
+                                                  id="#cookieCheck-2">
+                                        </div>
+                                   </h4>
+                                   <div id="cookie-2" class="accordion-collapse collapse"
+                                        aria-labelledby="headingСookie-2" data-bs-parent="#cookieAccordion" style="">
+                                        <div class="item-accordion__body">
+                                             Allow to ensure the individual experience of using the site,
+                                             are stored in the memory of the device for a certain period
+                                             of time and respond to the personal preferences of the user,
+                                             set in the browser, stored for no more than 1 year.
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="item-accordion">
+                                   <h4 id="headingСookie-3">
+                                        <button class="collapsed d-flex align-items-center item-accordion__button"
+                                             type="button" data-bs-toggle="collapse" data-bs-target="#cookie-3"
+                                             aria-expanded="false" aria-controls="cookie-3">
+                                             <span class="me-2 me-md-4 item-accordion__button_icon"></span>
+                                             <span class="item-accordion__button_text">Statistical</span>
+                                        </button>
+                                        <div class="form-check form-switch">
+                                             <input class="form-check-input" type="checkbox" role="switch"
+                                                  id="#cookieCheck-1">
+                                        </div>
+                                   </h4>
+                                   <div id="cookie-3" class="accordion-collapse collapse"
+                                        aria-labelledby="headingСookie-3" data-bs-parent="#cookieAccordion" style="">
+                                        <div class="item-accordion__body">
+                                             Needed to track pages and sections of the site visited
+                                             by the user, as well as to identify possible errors in the work
+                                             site. The information collected by this type of cookie is anonymous and
+                                             necessary for the effective maintenance and updating of the site, stored
+                                             for no more than 1 year.
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row mt-3 cookies-close">
+                         <a class="button" data-bs-dismiss="alert" aria-label="Close">Accept all</a>
+                         <a class="my-3 my-lg-0 ms-lg-3 button" data-bs-dismiss="alert" aria-label="Close">Reject
+                              all</a>
+                         <a class="ms-lg-auto button" data-bs-dismiss="alert" aria-label="Close">Save settings</a>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>

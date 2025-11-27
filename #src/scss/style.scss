@@ -1,0 +1,91 @@
+//! main imports
+@import "./functional/nullset";
+@import "./veriables/__fonts.scss";
+@import "./veriables/__variables.scss";
+@import "./functional/_mixins";
+@import "./veriables/__colors.scss";
+@import "./veriables/_titles.scss";
+@import "./veriables/_fonts-size";
+@import "./veriables/_borders";
+html{
+     height: auto;
+     scroll-behavior: smooth;
+     width: 100%;
+}
+html,
+body {
+	min-width: $minWidth;
+     width: 100%;
+     color: $color-blue-dark;
+}
+body{
+     font-size: $fontSize;
+     font-family: $font-family-regular;
+     display: flex;
+     flex-direction: column;
+     background: $color-white-main;
+     align-items: center;
+     min-height: 100vh;
+}
+main{
+     flex-grow: 1;
+     width: 100%;
+     min-width: $minWidth;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+:root{
+     font-size: 16px;
+}
+
+.content-container{
+     max-width: 84rem;
+     width: 100%;
+     padding: 0 3rem;
+     @media #{$ui-tablet} {
+          padding: 0 .875rem ;
+     }
+}
+
+main .content-container:not(:first-child){
+     margin-top: 6.25rem;
+}
+
+main .content-container:first-child{
+     margin-top: 2.5rem;
+     @media #{$ui-tablet} {
+          margin-top: 1.25rem;
+     }
+}
+
+main .content-container.news-container{
+     // padding: 0 .75rem !important;
+     @media #{$ui-tablet} {
+          // padding: 0 0 !important;
+     }
+}
+
+a:hover{
+     color: $color-blue-accent;
+     transition: $transition-main-3;
+}
+
+//! components imports
+@import "ui.scss";
+@import "./ui-components/__header.scss";
+@import "./ui-components/__mobile-menu.scss";
+@import "./ui-components/_footer.scss";
+@import "./ui-components/_banners";
+@import "./ui-components/_sliders";
+@import "./ui-components/_news";
+@import "./ui-components/_marquee";
+@import "./pages/about.scss";
+@import "./ui-components/_documents";
+@import "./ui-components/__forum.scss";
+@import "./ui-components/__comments.scss";
+@import "./pages/contact.scss";
+@import "./pages/search.scss";
+@import "./ui-components/_cookies.scss";
+// @import "media.scss";

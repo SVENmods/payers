@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="format-detection" content="telephone=no" />
+     <meta property="og:image" content="./img/header/logo.png" />
+     <meta name="description" content="Lorem ipsum dolor sit amet">
+     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+     <!-- bootstrap cdn -->
+     <link rel="stylesheet" href="css/functional/bootstrap@5.2.3.min.css" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+          integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+          crossorigin="anonymous"></script>
+     <!-- bootstrap cdn -->
+     <!-- gsap cdn -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+          integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Flip.min.js"
+          integrity="sha512-Vi0uAaoQQrIY8GZpbmwDW+BpKS+Xhf3FCh0iLWNR6oHlFtZ2hBzWoMEr4NXLd7CBnPKSjfL7fJxzk3inVPasdg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <!-- gsap cdn -->
+     <!-- jquery cdn -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+     <!-- jquery cdn -->
+     <!-- swiper cdn -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+     <!-- swiper cdn -->
+     <link rel="stylesheet" href="css/style.css" />
+     <title>Payers</title>
+</head>
+
+<body>
+     <header class="flex-row align-items-center justify-content-between w-100 content-container header">
+     <a class="header__logo" href="main.html">
+          <img src="./img/header/logo.png" alt="logo" class="w-100">
+     </a>
+     <div class="header__content">
+          <div class="dropdown header__link">
+               <a class="d-flex flex-row align-items-center dropdown-btn" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="./about-main.html">
+                    <span>About us</span>
+                    <div class="dropdown-chevron">
+                         <i class="bi bi-chevron-down test"></i>
+                    </div>
+               </a>
+               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="" href="./management.html"><i class="me-2 bi bi-people"></i>Management</a>
+                    <a class="" href="./members.html"><i class="me-2 bi bi-briefcase"></i>Members</a>
+                    <a class="" href="./documents.html"><i class="me-2 bi bi-clipboard"></i>Documents</a>
+                    <a class="" href="./agreements.html"><i class="me-2 bi bi-pass"></i>Agreements</a>
+               </div>
+          </div>
+
+          <a href="./news.html" class="header__link">News</a>
+          <a href="./contact.html" class="header__link">Contacts</a>
+          <a href="./forum.html" class="header__link">Forum</a>
+
+          <a href="https://www.facebook.com/groups/1080010765442829/about/" target="_blank"
+               class="header__link header__icon"><i class="bi bi-facebook"></i></a>
+          <a class="header__link header__icon header-search" " data-bs-toggle=" modal" data-bs-target="#searchModal"
+               type="button"><i class="bi bi-search"></i></a>
+          <div class="burger">
+               <span></span>
+          </div>
+     </div>
+</header>
+<div class="modal fade modal-search" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
+     aria-hidden="true">
+     <div class="d-flex justify-content-center modal-dialog">
+          <div class="px-0 modal-content">
+               <div class="py-0 modal-header search-header">
+                    <div class="d-flex flex-column flex-md-row justify-content-between px-4 py-3 w-100">
+                         <input type="text" name="" id="" class="my-2 pe-2 w-100 search-header__input"
+                              placeholder="Start typing">
+                         <a class="my-2 search-btn" href="./search.html">Search</a>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+          </div>
+     </div>
+</div>
+<nav class="mobile-menu">
+     <ul class="mobile-list">
+          <li>
+               <a aria-expanded="true" href="./about-main.html">
+                    About us
+               </a>
+               <div class="collapse mt-3 ps-3 show" id="menuAbout">
+                    <a href="./management.html" class="mb-3"><i class="me-2 bi bi-people"></i>Management</a>
+                    <a href="./members.html" class="mb-3"><i class="me-2 bi bi-briefcase"></i>Members</a>
+                    <a href="./documents.html" class="mb-3"><i class="me-2 bi bi-clipboard"></i>Documents</a>
+                    <a href="./agreements.html" class="mb-3"><i class="me-2 bi bi-pass"></i>Agreements</a>
+               </div>
+          </li>
+          <li><a href="./news.html">News</a></li>
+          <li><a href="./contact.html">Contacts</a></li>
+     </ul>
+     <hr>
+     <a href="https://www.facebook.com/groups/1080010765442829/about/" target="_blank">
+          <i class="bi bi-facebook"></i>
+     </a>
+</nav>
+<div class="overlay"></div>
+     <main>
+          <section class="content-container">
+               <div class="justify-content-center mx-0 my-2 my-md-0 w-100 h-100 banner banner-main row">
+                    <div class="d-flex flex-column align-items-end justify-content-center col-md-5">
+                         <p class="pe-none">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cumque repudiandae
+                              distinctio quia, perferendis iste qui sequi laudantium illum.
+                         </p>
+                         <em>No name</em>
+                    </div>
+                    <picture class="my-2 my-md-0 pe-0 col-md-7">
+                         <source media="(min-width: 650px)" srcset="./img/banners/banner-main.svg">
+                         <img src="./img/banners/banner-main.png" alt="banner-main">
+                    </picture>
+               </div>
+          </section>
+          <section class="d-flex flex-row justify-content-between w-100 content-container news-container row">
+               <div class="justify-content-start col-md-4 row">
+                    <div class="align-items-center mx-0 ps-0 col-12 row">
+                         <div class="mx-0 px-0 text-start col-6">
+                              <h3 class="block-title color-blue-accent fw-semibold">News</h3>
+                         </div>
+                         <div class="pe-0 text-end col-6">
+                              <a href="./news.html" class="color-text-gray sub-title">All news</a>
+                         </div>
+                    </div>
+                    <div class="mt-3 ps-0 col-12">
+                         <div class="swiper swiper-news swiper-with-img">
+                              <div class="swiper-wrapper">
+                                   <div class="swiper-slide">
+                                        <div class="d-flex flex-column justify-content-between pb-3 swiper-content"
+                                             onclick="location.href='./news-content.html';">
+                                             <div class="d-flex flex-column slide-tumbnail">
+                                                  <div class="slide-tumbnail__img">
+                                                       <img src="./img/pic/slider-prev.png" alt="slider-prev">
+                                                  </div>
+                                                  <div class="slide-text">
+                                                       <p>
+                                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Inventore veritatis porro eius
+                                                       </p>
+                                                  </div>
+                                             </div>
+                                             <div class="align-items-center slide-footer row">
+                                                  <div class="my-2 text-start col-6">
+                                                       <span>12.08.2022</span>
+                                                  </div>
+                                                  <div class="my-2 text-end col-6">
+                                                       <span>#Line</span>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="d-flex flex-column justify-content-between pb-3 swiper-content"
+                                             onclick="location.href='./news-content.html';">
+                                             <div class="d-flex flex-column slide-tumbnail">
+                                                  <div class="slide-tumbnail__img">
+                                                       <img src="./img/pic/slider-prev.png" alt="slider-prev">
+                                                  </div>
+                                                  <div class="slide-text">
+                                                       <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Dolores quae expedita ducimus optio
+                                                            eligendi, inventore nobis repellendus rerum
+                                                            aliquid nam vitae. Error molestias nemo
+                                                            repellat facere deleniti atque pariatur excepturi!
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit.
+                                                       </p>
+                                                  </div>
+                                             </div>
+                                             <div class="slide-footer row">
+                                                  <div class="text-start col-6">
+                                                       <span>12.08.2022</span>
+                                                  </div>
+                                                  <div class="text-end col-6">
+                                                       <span>#Line</span>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="d-flex flex-column justify-content-between pb-3 swiper-content"
+                                             onclick="location.href='./news-content.html';">
+                                             <div class="d-flex flex-column slide-tumbnail">
+                                                  <div class="slide-tumbnail__img">
+                                                       <img src="./img/pic/slider-prev.png" alt="slider-prev">
+                                                  </div>
+                                                  <div class="slide-text">
+                                                       <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Dolores quae expedita ducimus optio
+                                                            eligendi, inventore nobis repellendus rerum
+                                                            aliquid nam vitae. Error molestias nemo
+                                                            repellat facere deleniti atque pariatur excepturi!
+                                                       </p>
+                                                  </div>
+                                             </div>
+                                             <div class="slide-footer row">
+                                                  <div class="text-start col-6">
+                                                       <span>12.08.2022</span>
+                                                  </div>
+                                                  <div class="text-end col-6">
+                                                       <span>#Line</span>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="swiper-pagination"></div>
+                         </div>
+                    </div>
+               </div>
+               <div class="d-flex flex-column justify-content-between mb-4 col-md-8">
+                    <div class="d-flex flex-row row">
+                         <div class="d-flex flex-column justify-content-start my-2 my-md-0 col-md-6">
+                              <div
+                                   class="d-flex flex-row flex-wrap align-items-center justify-content-between text-nowrap">
+                                   <h3 class="block-title text-start color-blue-accent fw-semibold">Blog</h3>
+                                   <a href="./blog.html" class="color-text-gray text-end sub-title">Show more</a>
+                              </div>
+                              <div
+                                   class="news-block d-flex flex-column justify-content-between mt-2 h-100 news-dark-blue">
+                                   <p>Name Surname</p>
+                                   <div class="">
+                                        <span>18.02.2023</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="d-flex flex-column justify-content-start my-2 my-md-0 col-md-6">
+                              <div class="d-flex flex-row">
+                                   <h3 class="block-title color-blue-accent fw-semibold">Announcement</h3>
+                              </div>
+                              <div class="news-block d-flex flex-column justify-content-between mt-2 h-100 news-blue">
+                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                   <div class="d-flex flex-row flex-wrap justify-content-between w-100">
+                                        <span>18.02.2023</span>
+                                        <span>#Line</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="">
+                         <div class="d-flex flex-column justify-content-start col-md-12">
+                              <h3 class="block-title color-blue-accent fw-semibold">Comments</h3>
+                              <div class="news-block d-flex flex-column justify-content-between mt-2 h-100 news-gray">
+                                   <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum possimus iusto
+                                        non facere.
+                                   </p>
+                                   <div class="d-flex flex-row flex-wrap justify-content-between w-100">
+                                        <span>18.02.2023</span>
+                                        <span>#Line</span>
+                                   </div>
+                              </div>
+                              <a href="./explanations.html" class="mt-2 color-text-gray sub-title">All comments</a>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="content-container">
+               <div class="justify-content-between mx-0 w-100 banner banner-numbers row">
+                    <div
+                         class="d-flex flex-row flex-md-column align-items-center my-2 my-md-0 text-md-center col-md-4 col-sm-12 row banner-numbers__text">
+                         <span class="col-4 col-md-12">7</span>
+                         <span class="col-8 col-md-12">years of work</span>
+                    </div>
+                    <div
+                         class="d-flex flex-row flex-md-column align-items-center my-2 my-md-0 text-md-center col-md-4 col-sm-12 row banner-numbers__text">
+                         <span class="col-4 col-md-12">70+</span>
+                         <span class="col-8 col-md-12">achievements</span>
+                    </div>
+                    <div
+                         class="d-flex flex-row flex-md-column align-items-center my-2 my-md-0 text-md-center col-md-4 col-sm-12 row banner-numbers__text">
+                         <span class="col-4 col-md-12">140</span>
+                         <span class="col-8 col-md-12">works</span>
+                    </div>
+               </div>
+          </section>
+          <section class="content-container">
+               <h1 class="section-title color-blue-accent fw-semibold">Activities</h1>
+               <div class="mt-4 w-100">
+                    <div class="swiper swiper-event">
+                         <div class="swiper-wrapper">
+                              <a class="swiper-slide" href="google.com">
+                                   <div
+                                        class="d-flex flex-column justify-content-between pb-3 swiper-content-img swiper-content">
+                                        <div class="d-flex flex-column slide-tumbnail">
+                                             <div class="slide-text">
+                                                  <p>
+                                                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                  </p>
+                                             </div>
+                                        </div>
+                                        <div class="slide-footer row">
+                                             <div class="text-start col-6">
+                                                  <span>12.08.2022</span>
+                                             </div>
+                                             <div class="text-end col-6">
+                                                  <span>#Line</span>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </a>
+                              <a class="swiper-slide" href="google.com">
+                                   <div
+                                        class="d-flex flex-column justify-content-between pb-3 swiper-content-img swiper-content">
+                                        <div class="d-flex flex-column slide-tumbnail">
+                                             <div class="slide-text">
+                                                  <p>
+                                                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab eos,
+                                                       sint similique cupiditate atque totam, aliquam consectetur enim
+                                                       suscipit nemo, deleniti blanditiis.
+                                                  </p>
+                                             </div>
+                                        </div>
+                                        <div class="slide-footer row">
+                                             <div class="text-start col-6">
+                                                  <span>12.08.2022</span>
+                                             </div>
+                                             <div class="text-end col-6">
+                                                  <span>#Line</span>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </a>
+                              <a class="swiper-slide" href="google.com">
+                                   <div
+                                        class="d-flex flex-column justify-content-between pb-3 swiper-content-img swiper-content">
+                                        <div class="d-flex flex-column slide-tumbnail">
+                                             <div class="slide-text">
+                                                  <p>
+                                                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                  </p>
+                                             </div>
+                                        </div>
+                                        <div class="slide-footer row">
+                                             <div class="text-start col-6">
+                                                  <span>12.08.2022</span>
+                                             </div>
+                                             <div class="text-end col-6">
+                                                  <span>#Line</span>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </a>
+                              <a class="swiper-slide" href="google.com">
+                                   <div
+                                        class="d-flex flex-column justify-content-between pb-3 swiper-content-img swiper-content">
+                                        <div class="d-flex flex-column slide-tumbnail">
+                                             <div class="slide-text">
+                                                  <p>
+                                                       Lorem ipsum dolor sit amet consectetur adipisicing
+                                                       elit. Dolores quae expedita ducimus optio
+                                                       eligendi, inventore nobis repellendus rerum
+                                                       aliquid nam vitae. Error molestias nemo
+                                                       repellat facere deleniti atque pariatur excepturi!
+                                                  </p>
+                                             </div>
+                                        </div>
+                                        <div class="slide-footer row">
+                                             <div class="text-start col-6">
+                                                  <span>12.08.2022</span>
+                                             </div>
+                                             <div class="text-end col-6">
+                                                  <span>Line</span>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                         <!-- If we need navigation buttons -->
+                         <div class="swiper-button-prev"></div>
+                         <div class="swiper-button-next"></div>
+                         <!-- If we need scrollbar -->
+                    </div>
+               </div>
+          </section>
+          <section class="content-container">
+               <span class="section-title color-blue-accent fw-semibold fs-1">Advantages</span>
+               <div class="mx-0 mt-4 px-0 w-100 advantages row">
+     <div class="my-2 col-lg-4">
+          <div class="advantages-card adv-card-1">
+               <div class="advantages-card__text">
+                    Lorem, ipsum dolor sit amet consectetur
+               </div>
+          </div>
+     </div>
+
+     <div class="my-2 col-lg-4">
+          <div class="advantages-card adv-card-2">
+               <div class="advantages-card__text">
+                    Amet consectetur adipisicing elit
+               </div>
+          </div>
+     </div>
+
+     <div class="my-2 col-lg-4">
+          <div class="advantages-card adv-card-3">
+               <div class="advantages-card__text">
+                    Animi aperiam velit ratione eos eveniet
+               </div>
+          </div>
+     </div>
+
+     <div class="my-2 col-lg-5">
+          <div class="advantages-card adv-card-4">
+               <div class="advantages-card__text">
+                    Velit eum incidunt ex sequi distinctio
+               </div>
+          </div>
+     </div>
+
+     <div class="my-2 col-lg-5">
+          <div class="advantages-card adv-card-5">
+               <div class="advantages-card__text">
+                    Animi aperiam velit ratione eos eveniet
+               </div>
+          </div>
+     </div>
+
+     <div class="my-2 col-lg-2">
+          <div class="d-flex flex-column flex-wrap align-items-center justify-content-center px-4 py-4 border-20 h-100 text-center btn-adv-enter"
+               role="button" type="button" data-bs-toggle="modal" data-bs-target="#enterForm">
+               <span>+</span>
+               <span>Velit eum</span>
+          </div>
+     </div>
+</div>
+               <div class="modal fade" id="enterForm" tabindex="-1" aria-labelledby="enterFormlabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+               <div class="d-flex flex-row align-items-start border-0 modal-header">
+                    <span class="modal-title fs-24 color-blue-accent fw-semibold" id="enterFormlabel">
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                    <div class="">
+                         <label for="fullName" class="color-blue-accent fs-16 fw-semibold">
+                              Name
+                         </label>
+                         <input type="text" name="" id="fullName" placeholder="Name Surname">
+                    </div>
+                    <div class="mt-3">
+                         <label for="mainActivity" class="color-blue-accent fs-16 fw-semibold">
+                              Main activity
+                         </label>
+                         <input type="text" name="" id="mainActivity" placeholder="Non-food trading">
+                    </div>
+                    <div class="mt-3">
+                         <label for="address" class="color-blue-accent fs-16 fw-semibold">
+                              Legal and postal address
+                         </label>
+                         <input type="text" name="" id="address" placeholder="Address">
+                    </div>
+                    <div class="mt-3">
+                         <label for="UNP" class="color-blue-accent fs-16 fw-semibold">
+                              UNP
+                         </label>
+                         <input type="number" name="" id="UNP" placeholder="4475452456">
+                    </div>
+                    <div class="mt-3">
+                         <label for="contactName" class="color-blue-accent fs-16 fw-semibold">
+                              Contact person
+                         </label>
+                         <input type="text" name="" id="contactName" placeholder="Name Surname">
+                    </div>
+                    <div class="mt-3">
+                         <label for="tel" class="color-blue-accent fs-16 fw-semibold">
+                              Phone
+                         </label>
+                         <input type="text" name="" id="tel" placeholder="+375 (00) 000 00 00">
+                    </div>
+                    <div class="d-flex flex-row align-items-center justify-content-start mt-3">
+                         <input type="checkbox" id="policy">
+                         <label for="policy" class="ms-2 w-100 fs-16">
+                              Consent to the processing of personal data
+                         </label>
+                    </div>
+                    <div class="mt-4 w-100">
+                         <button class="w-100 btn-tr" data-bs-target="#modalSuccess" data-bs-toggle="modal"
+                              data-bs-dismiss="modal">Leave a request</button>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>
+
+<div class="modal fade" id="modalSuccess" aria-hidden="true" aria-labelledby="modalSuccessLabel" tabindex="-1">
+     <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+               <div class="d-flex flex-row align-items-start border-0 modal-header">
+                    <span class="modal-title fs-24 color-blue-accent fw-semibold" id="enterFormlabel">
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="text-center modal-body fs-18">
+                    Sunt vitae alias odit quia nemo aperiam, quos reprehenderit autem doloribus delectus eius et quidem
+                    recusandae dolores eos vel ad repellat molestias?
+               </div>
+          </div>
+     </div>
+</div>
+               <div class="mx-0 mt-5 w-100 banner banner-part row">
+                    <div class="align-items-center col-md-12 row banner-part__text fw-bold">
+                         <span class="col-2">17</span>
+                         <span class="d-flex align-items-center justify-content-start col-10">Organizations </span>
+                    </div>
+                    <div class="justify-content-between mt-3 col-md-12 row">
+                         <img class="col-2" src="./img/banners/partners/taikiri.png" alt="taikiri" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/finexpertiza.png" alt="finexpertiza"
+                              loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/a1.png" alt="a1" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/oma.png" alt="oma" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/salt.png" alt="salt" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/kvg.png" alt="kvg" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/granit.png" alt="granit" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/pik.png" alt="pik" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/tabak.png" alt="tabak" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/sodrujestvo.png" alt="sodrujestvo"
+                              loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/sosedi.png" alt="sosedi" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/evroopt.png" alt="evroopt" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/revera.png" alt="revera" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/urspektr.png" alt="urspektr" loading="lazy">
+                         <img class="col-2" src="./img/banners/partners/arlepta.png" alt="arlepta" loading="lazy">
+                    </div>
+               </div>
+               <div
+                    class="justify-content-md-between align-items-center justify-content-center mx-0 mt-5 px-4 py-md-0 w-100 banner banner-email row">
+                    <div class="d-xl-block p-0 d-none col-xl-2">
+                         <picture class="">
+                              <source media="(min-width: 650px)" srcset="./img/banners/banner-email.svg">
+                              <img src="./img/banners/banner-email.png" alt="banner-email">
+                         </picture>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between my-2 p-0 col-12 col-xl-9 row">
+                         <div class="my-2 banner-email__text col-md-6">
+                              <span>Subscribe</span>
+                              <p class="mt-1 mb-0">
+                                   Lorem ipsum dolor sit amet consectetur.
+                              </p>
+                         </div>
+                         <div
+                              class="d-flex flex-row align-items-center justify-content-between my-2 banner-email__input col-md-5">
+                              <input type="email" id="bannerEmail" class="w-100" placeholder="Email">
+                              <button class="bi-arrow-right bg-transparent bi color-blue-accent"></button>
+                         </div>
+                    </div>
+               </div>
+               <div
+                    class="justify-content-md-between align-items-center justify-content-center mx-0 mt-5 px-4 py-md-0 w-100 banner banner-email row">
+                    <div class="d-xl-block p-0 d-none col-xl-2">
+                         <picture class="">
+                              <source media="(min-width: 650px)" srcset="./img/banners/banner-email.svg">
+                              <img src="./img/banners/banner-email.png" alt="banner-email">
+                         </picture>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between my-2 p-0 col-12 col-xl-9 row">
+                         <div class="my-2 banner-email__text col-md-6">
+                              <span>Subscribe</span>
+                              <p class="mt-1 mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+                         </div>
+                         <div
+                              class="d-flex flex-row align-items-center justify-content-between my-2 banner-email__input banner-email__input-error col-md-5">
+                              <input type="email" id="bannerEmail" class="w-100" placeholder="Email">
+                              <button class="bi-arrow-right bg-transparent bi color-blue-accent"></button>
+                         </div>
+                    </div>
+               </div>
+               </div>
+               <div class="content-container">
+                    <div class="w-100 marquee-container">
+                         <div class="swiper swiper-marquee marquee">
+                              <div class="swiper-wrapper">
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <p>
+                                                  Et, unde. Possimus amet nam nobis.
+                                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Belarus_gerb.png" alt="Belarus_gerb">
+                                             <p>
+                                                  Aliquam iusto iste assumenda, consectetur blanditiis nulla modi
+                                                  possimus cumque culpa sequi!
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Belta.png" alt="Belta">
+                                             <p>
+                                                  Name
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Belarus_gerb.png" alt="Belarus_gerb">
+                                             <p>
+                                                  Voluptas incidunt consequatur fugiat vero alias, magnam qui.
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Nodo.png" alt="Nodo">
+                                             <p>
+                                                  Et, unde
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Bird.png" alt="Bird">
+                                             <p>
+                                                  Possimus amet nam nobis.
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/BFFS.png" alt="BFFS">
+                                             <p>
+                                                  Asperiores ipsa animi a quos accusamus pariatur ipsum esse beatae
+                                                  praesentium fugit
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <p>
+                                                  Lorem ipsum dolor, sit amet consectetur adipisicing elit
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Belarus_gerb.png" alt="Belarus_gerb">
+                                             <p>
+                                                  Cumque exercitationem dignissimos, qui voluptatibus inventore porro
+                                                  aspernatur voluptatem.
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Belta.png" alt="Belta">
+                                             <p>
+                                                  Name 2
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Belarus_gerb.png" alt="Belarus_gerb">
+                                             <p>
+                                                  Cumque exercitationem dignissimos, qui voluptatibus inventore porro
+                                                  aspernatur voluptatem.
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Nodo.png" alt="Nodo">
+                                             <p>
+                                                  Et, unde
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/Bird.png" alt="Bird">
+                                             <p>
+                                                  Possimus amet nam nobis.
+                                             </p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <div class="marquee__item">
+                                             <img src="./img/marquee/BFFS.png" alt="BFFS">
+                                             <p>
+                                                  Asperiores ipsa animi a quos accusamus pariatur ipsum esse beatae
+                                                  praesentium fugit
+                                             </p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+     </main>
+     <footer class="d-flex justify-content-center pt-3 pb-3 w-100 footer">
+     <div class="d-flex flex-column content-container">
+          <div class="w-100 row">
+               <div class="d-flex flex-column col-md-6">
+                    <div class="footer-title"><a href="./contact.html">Contacts</a></div>
+                    <div class="flex-column mt-3 footer-contact footer-text">
+                         <p>Lorem ipsum dolor sit amet</p>
+                         <a href="mailto:email@email.com">E-mail: email@email.com</a>
+                         <a href="tel:+375111111111">Phone: +375 11 111 11 11</a>
+                    </div>
+               </div>
+               <div class="d-flex flex-column col-md-6">
+                    <div class="footer-title"><a href="./about-main.html">About us</a></div>
+                    <div class="footer-title"><a href="./news.html">News</a></div>
+                    <div class="footer-title"><a href="./blog.html">Blog</a></div>
+                    <div class="footer-title"><a href="./explanations.html">Explanations and comments</a></div>
+               </div>
+          </div>
+
+          <div class="align-items-end justify-content-between mt-4 w-100 row">
+               <div class="footer-text col-md-6">
+                    <p>
+                         © 2023, All rights reserved
+                    </p>
+               </div>
+               <div class="footer-text col-md-6">
+                    <p>
+                         Site developed by
+                    </p>
+               </div>
+          </div>
+     </div>
+</footer>
+     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script> -->
+<script src="https://unpkg.com/imask"></script>
+<script src="js/script.min.js"></script>
+</body>
+
+</html>

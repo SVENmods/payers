@@ -1,0 +1,60 @@
+.color-background-main{
+     color: $color-white-main;
+}
+.color-white{
+     color: $color-white;
+}
+
+.color-blue-accent{
+     color: $color-blue-accent;
+}
+
+.color-white-text{
+     color: $color-white-main;
+}
+
+.color-blue-black{
+     color: $color-blue-black;
+}
+
+.color-bg-blue-black{
+     background-color: $color-blue-black;
+}
+
+.color-blue-dark{
+     color: $color-blue-dark;
+}
+
+.color-black{
+     color: $color-black;
+}
+
+.color-background-sky-blue{
+     color: $color-background-sky-blue;
+}
+
+.color-text-gray{
+     color: $color-text-gray;
+}
+
+.color-bg-accent{
+     background-color: $color-blue-accent;
+}
+
+.color-bg-sky-blue-light{
+     background-color: $color-background-sky-blue-light;
+}
+
+.color-bg-sky-blue{
+     background-color: $color-sky-blue;
+}
+
+.color-blue-black.icon-star{
+     &::before{
+          color: $color-blue-black;
+     }
+}
+
+.color-background-gray-tr-4{
+     background-color: $color-background-gray-tr-4;
+}

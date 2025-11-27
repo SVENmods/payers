@@ -1,0 +1,37 @@
+.footer {
+     background-color: $color-blue-accent;
+     &, a{
+          color: $color-white;
+     }
+     margin-top: 3rem;
+}
+.footer-title {
+     @include adaptiv-value("font-size", 17, 12, 1);
+     @include adaptiv-value("line-height", 21, 15, 1);
+     font-family: $font-family-light;
+     font-weight: 600;
+     &, a{
+          text-transform: uppercase;
+     }
+     transition: $transition-main-3;
+     @media #{$mouse-device} {
+          a:hover{
+               color: $color-background-sky-blue-light;
+          }
+     }
+     margin-top: 10px;
+}
+.footer-text {
+     @include adaptiv-value("font-size", 16, 12, 1);
+     @include adaptiv-value("line-height", 19, 14, 1);
+     a{
+          margin-bottom: 1rem;
+     }
+}
+
+.footer-contact{
+     display: flex;
+     @media #{$ui-tablet} {
+          display: none;
+     }
+}
